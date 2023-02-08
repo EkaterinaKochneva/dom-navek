@@ -2,6 +2,21 @@
 .header {
   margin-bottom: 145px;
 }
+@media (max-width: 991px) {
+  .header {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 180px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    margin-bottom: 160px;
+  }
+}
 .header__fixed {
   position: fixed;
   top: 0;
@@ -30,6 +45,11 @@
   .header__bottom .container {
     max-width: none;
     padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header__bottom.fixed {
+    background-color: var(--accent-color);
   }
 }
 

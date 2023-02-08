@@ -11,7 +11,14 @@ $(document).ready(function(){
 		$(this).next(".bottom-header__sublist").slideToggle();
 	});
 
-	
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 200){
+		  $('.header__bottom').addClass('fixed');
+		}
+		else{
+			$('.header__bottom').removeClass('fixed');
+		}
+	});
 
 
 })
