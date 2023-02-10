@@ -52,7 +52,6 @@ a {
 a:not([class]) {
   text-decoration: underline;
   color: var(--accent-color);
-  font-weight: 700;
   transition: color 0.15s ease-in;
 }
 

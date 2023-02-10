@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-	<title>Главная</title>
+	<title>Каталог</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 
@@ -10,7 +10,7 @@
 	
 	<link rel="stylesheet" href="css/style.css"><!-- Стили, которые повторяются на всех страницах -->
 	<link rel="stylesheet" href="css/base.css"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
-	<link rel="stylesheet" href="css/index.css"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/product-page.css"><!-- Стили, для отдельных видов страниц-->	
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 
@@ -135,107 +135,76 @@
         </div>
     </div>
 </header>
-            <main class="page index-page">
+            <main class="page catalog-page">
 
-                <!-- Top banner section -->
-                <div class="index-page__hero hero">
-                    <div class="hero__top">
-                        <div class="hero__picture">
-                            <picture>
-                                <source type="image/webp" srcset="img/index-page/dom-za-30-dney.webp">
-                                <img src="img/index-page/dom-za-30-dney.jpg" alt="Теплый дом за 30 дней">
-                            </picture>
-                        </div>
-                        <div class="hero__mark">
-                            <div class="container">
-                                <picture>
-                                    <source type="image/webp" srcset="img/index-page/banner-plashka.webp">
-                                    <img src="img/index-page/banner-plashka.png" alt="Плашка заезжай и живи">
-                                </picture>
-                            </div>                        
-                        </div>
-                        <div class="container">
-                            <div class="hero__content">
-                                <div class="hero__title">Теплый семейный дом <br> c&nbsp;террасой за&nbsp;30&nbsp;дней</div>
-                                <div class="hero__subtitle">от 1 385 500 руб.</div>
-                                <div class="hero__desc">Альтернатива городской квартире</div>
-                                <a class="hero__link main-btn" href="/stroitelstvo/dom-30-days/">Посмотреть все проекты</a>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="hero__bottom benefits">
-                        <div class="container">
-                            <ul class="benefits__row">
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--1">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Гарантия 5 лет
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--2">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Сдача в срок
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--3">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Фиксированная стоимость
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--4">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Предоплата 0% 
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--5">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Осуществление полного цикла инженерных работ
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--6">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Поэтапная оплата
-                                    </div>
-                                </li>
-                                <li class="benefits__item">
-                                    <div class="benefits__icon benefits__icon--7">
-                                    </div>
-                                    <div class="benefits__desc">
-                                        Гарантия качества строительных работ
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </div>
-                    </div>
+                <!-- Breadcrumbs -->
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Строительство</span>
+                            </li>                                    
+                        </ol>                                
+                    </nav>
                 </div>
-                <!-- //Top banner section -->
+                <!-- //Breadcrumbs -->
 
                 <!-- First text section -->
                 <section>
                     <div class="container">
                         <div class="section-line-title">
-                            <h1>Строительство загородных домов</h1>
+                            <h1>Строительство коттеджей под ключ</h1>
                         </div>
-                        <p>Компания &laquo;Дом на&nbsp;Век&raquo;&nbsp;&mdash; производитель и&nbsp;застройщик быстровозводимого жилья для сезонного и&nbsp;круглогодичного проживания в&nbsp;Санкт-Петербурге и&nbsp;Ленинградской области. Мы&nbsp;предлагаем Вам строительство загородных домов под ключ, с&nbsp;применением высококачественных материалов, способных прослужить в&nbsp;течение длительного времени. Применяемые технологии отличаются своей эффективностью, обеспечивают высокую скорость возведения домов и&nbsp;снижают финальную стоимость работ. В&nbsp;нашем каталоге проектов&nbsp;Вы можете найти многоэтажные коттеджи и&nbsp;дома эконом класса.
+                        <ul class="list-houses">
+                            <li class="list-houses__item">
+                                <a class="list-houses__link" href="/karkasnye-doma/" title="Каркасные дома">     
+                                    <picture>
+                                        <source type="image/webp" srcset="img/list-houses/list-houses-1.webp">
+                                        <img class="list-houses__img" src="img/list-houses/list-houses-1.png" alt="Каркасные дома">
+                                    </picture>
+                                    <div class="list-houses__title">Каркасные дома</div>
+                                </a>
+                            </li>
+                            <li class="list-houses__item">
+                                <a class="list-houses__link" href="/stroitelstvo/brusovye-doma/" title="Дома из бруса">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/list-houses/list-houses-2.webp">
+                                        <img class="list-houses__img" src="img/list-houses/list-houses-2.png" alt="Дома из бруса">
+                                    </picture>
+                                    <div class="list-houses__title">Дома из бруса</div>
+                                </a>
+                            </li>
+                            <li class="list-houses__item">
+                                <a class="list-houses__link" href="/stroitelstvo/gazobetonnye-doma/">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/list-houses/list-houses-3.webp">
+                                        <img class="list-houses__img" src="img/list-houses/list-houses-3.png" alt="Дома из газобетона">
+                                    </picture>
+                                    <div class="list-houses__title">Дома из газобетона</div>
+                                </a>
+                            </li>
+                            <li class="list-houses__item">
+                                <a class="list-houses__link" href="/stroitelstvo/bani/" title="Бани">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/list-houses/list-houses-4.webp">
+                                        <img class="list-houses__img" src="img/list-houses/list-houses-4.png" alt="Бани">
+                                    </picture>                                    
+                                    <div class="list-houses__title">Бани</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Компания &laquo;Дом на&nbsp;Век&raquo; занимается строительством коттеджей под ключ в&nbsp;Санкт-Петербурге и&nbsp;Ленинградской области. На&nbsp;нашем сайте представлены типовые проекты домов. Вы&nbsp;можете индивидуально подобрать технологию строительства, тип фундамента, планировку, комплектацию, систему отопления, водоснабжения и&nbsp;канализации. Цена проекта будет зависеть от&nbsp;выбранных параметров. Наши менеджеры всегда готовы предоставить подробную информацию по&nbsp;выполняемым работам, материалам и&nbsp;стоимости коттеджей.
                         </p>
                         <ul class="projects-list mb-30">
                             <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/odnojetazhnye.php">Одноэтажные</a></li>
                             <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/brusovye-doma/dvuhjetazhnye.php">Двухэтажные</a></li>
-                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-100-kv-m.php">До 100 кв. м</a></li>
-                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-150-kv-m.php">От 100 до 150 кв. м</a></li>
-                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-200-kv-m.php">От 150 до 200 кв. м</a></li>
-                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-bolee-200-kv-m.php">Более 200 кв. м</a></li>
+                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-100-kv-m.php">До 100 кв. м.</a></li>
+                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-150-kv-m.php">От 100 до 150 кв. м.</a></li>
+                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-do-200-kv-m.php">От 150 до 200 кв. м.</a></li>
+                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-bolee-200-kv-m.php">Более 200 кв. м.</a></li>
                             <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/brusovye-doma/6x6.php">6х6</a></li>
                             <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-8-na-8.php">8х8</a></li>
                             <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/doma-10-na-10.php">10х10</a></li>
@@ -252,7 +221,7 @@
                 <!-- //First text section -->
 
                 <!-- Catalog section -->
-                <section class="index-page__catalog catalog">
+                <section class="page__catalog catalog">
                     <div class="container">
                         <form class="catalog__sort-filter sort-filter">
                             <fieldset class="sort-filter__item">
@@ -666,510 +635,49 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="catalog__more">
-                            <a class="catalog__more-link border-btn" href="/stroitelstvo/">Посмотреть все проекты</a>
-                        </div>
                     </div>
                 </section>
                 <!-- //Catalog section -->
-                <!-- Payment section -->
-                <section class="index-page__payment payment white-bg">
-                    <div class="container">
-                        <div class="section-small-line-title">
-                            <div class="h1">Мы предлагаем способы оплаты</div>
-                        </div>
-                        <div class="payment__row row gy-2 gy-sm-4 justify-content-between">
-                            <div class="col-sm-6 col-lg-3 payment__item">
-                                <picture>
-                                    <source type="image/webp" srcset="img/icons/methods1.webp">
-                                    <img class="payment__img" src="img/icons/methods1.png" alt="Дом в кредит">
-                                </picture>
-                                <div class="payment__title">Дом в кредит</div>
-                                <div class="payment__desc">Мы сотрудничаем с несколькими крупнейшими банка России, которые предоставляют кредит по ставке от 10,4% годовых</div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 payment__item">
-                                <picture>
-                                    <source type="image/webp" srcset="img/icons/methods2.webp">
-                                    <img class="payment__img" src="img/icons/methods2.png" alt="Материнский капитал">
-                                </picture>
-                                <div class="payment__title">Материнский капитал</div>
-                                <div class="payment__desc">Если Вы получили материнский капитал от государства, то можете использовать его на строительство дома</div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 payment__item">
-                                <picture>
-                                    <source type="image/webp" srcset="img/icons/methods3.webp">
-                                    <img class="payment__img" src="img/icons/methods3.png" alt="Субсидии">
-                                </picture>
-                                <div class="payment__title">Субсидии</div>
-                                <div class="payment__desc">Мы работаем с государственными субсидиями. Для получения подробной информации звоните нашим менеджерам</div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 payment__item">
-                                <picture>
-                                    <source type="image/webp" srcset="img/icons/methods4.webp">
-                                    <img class="payment__img" src="img/icons/methods4.png" alt="Безналичная оплата">
-                                </picture>
-                                <div class="payment__title">Безналичная оплата</div>
-                                <div class="payment__desc">Вы можете заключить договор на компанию и оплачивать работы по безналичному расчету</div>
-                            </div>
-                        </div>
-                    </div>
 
-                </section>
-                <!-- //Payment section -->
+                <!-- Questions form  -->
+                <div class="container">
+                    <section class="page__questions questions-form__wrapper">                    
+                        <form class="questions-form">
+                            <div class="questions-form__title">
+                                У вас остались вопросы?
+                            </div>
+                            <div class="questions-form__text">
+                                Звоните по телефонам:
+                            </div>
+                            <div class="questions-form__phones">
+                                <a class="questions-form__phone" href="tel:88123098141" >8 (812) 309 81 41</a>
+                                <a class="questions-form__phone" href="tel:88129452538" >8 (812) 945 25 38</a>
+                            </div>
+                            <div class="questions-form__text">
+                                Или оставьте заявку:
+                            </div>
+                            <div class="questions-form__inputs">
+                                <input class="questions-form__input custom-input" type="text" name="order[name]" placeholder="Ваше имя:">
+                                <input class="questions-form__input custom-input" type="tel" name="order[phone]" placeholder="Ваш телефон:">
+                                <textarea class="questions-form__textarea custom-textarea" placeholder="Комментарий:" name="order[text]"></textarea>
+                            </div>
+                            
+                            <div class="questions-form__captcha">
+                                <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                            </div>
+                            <button class="questions-form__btn" type="submit">Отправить</button>
+                            <label class="questions-form__check custom-checkbox">
+                                <input class="custom-checkbox__input" type="checkbox" checked required>
+                                <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+                            </label>
+                        </form>                  
+                    </section>
+                </div>
+                
+                <!-- //Questions form  -->
 
-                <!-- Calculator section -->
-                <section class="index-page__calculator calculator grey-bg">
-                    <div class="container">
-                        <div class="calculator__row">
-                            <div class="calculator__info">
-                                <div class="calculator__title">
-                                    <svg class="icon-svg">
-                                        <use xlink:href="img/icons/sprite-icons.svg#calculator"></use>
-                                    </svg>
-                                    <span>Расчет стоимости</span>                                        
-                                </div>
-                                <div class="calculator__desc">
-                                    Узнайте за семь простых шагов стоимость вашего дома и вашу персональную скидку
-                                </div>
-                            </div>
-                            <div class="calculator__content">
-                                <ol class="calculator__counter">
-                                    <li class="calculator__counter-item active" data-step="step_id_1"><span>Шаг 1</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_2"><span>Шаг 2</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_3"><span>Шаг 3</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_4"><span>Шаг 4</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_5"><span>Шаг 5</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_6"><span>Шаг 6</span></li>
-                                    <li class="calculator__counter-item" data-step="step_id_7"><span>Шаг 7</span></li>
-                                </ol>
-                                <form class="calculator__form" action="/mail.php" method="post">
-                                    <div class="calculator__step active" id="step_id_1">
-                                        <div class="calculator__ask"><h3>Из чего будет Ваш дом?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build1]" value="Каркасный дом" checked>
-                                                        <span class="custom-radio__text">Каркасный дом</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build1]" value="Дом из бруса">
-                                                        <span class="custom-radio__text">Дом из бруса</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build1]" value="Дом из газобетона">
-                                                        <span class="custom-radio__text">Дом из газобетона</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock">
-                                                    <div class="calculator__stock-title">Ваша скидка:</div>
-                                                    <div class="calculator__stock-count"><span>0</span> руб.</div>
-                                                </div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_2" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_2">
-                                        <div class="calculator__ask"><h3>Какой этажности будет дом?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build2]" value="Один этаж" checked>
-                                                        <span class="custom-radio__text">Один этаж</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build2]" value="Один с жилой мансардой">
-                                                        <span class="custom-radio__text">Один с жилой мансардой</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build2]" value="2 и более жилых этажа">
-                                                        <span class="custom-radio__text">2 и более жилых этажа</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>3 000</span> руб.</div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_3" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_3">
-                                        <div class="calculator__ask"><h3>Что планируете на крыше?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build3]" value="Металлочерепица" checked>
-                                                        <span class="custom-radio__text">Металлочерепица</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build3]" value="Гибкая черепица">
-                                                        <span class="custom-radio__text">Гибкая черепица</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build3]" value="Профнастил">
-                                                        <span class="custom-radio__text">Профнастил</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build3]" value="Фальцевая кровля">
-                                                        <span class="custom-radio__text">Фальцевая кровля</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>6 000</span> руб.</div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_4" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_4">
-                                        <div class="calculator__ask"><h3>У вас будет гараж?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build4]" value="Отдельный гараж" checked>
-                                                        <span class="custom-radio__text">Отдельный гараж</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build4]" value="Пристроеный гараж">
-                                                        <span class="custom-radio__text">Пристроеный гараж</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build4]" value="Пока без гаража">
-                                                        <span class="custom-radio__text">Пока без гаража</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build4]" value="Еще не решил">
-                                                        <span class="custom-radio__text">Еще не решил</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>10 000</span> руб.</div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_5" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_5">
-                                        <div class="calculator__ask"><h3>У вас будет баня?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build45]" value="Отдельная баня" checked>
-                                                        <span class="custom-radio__text">Отдельная баня</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build5]" value="Сауна/баня внутри дома">
-                                                        <span class="custom-radio__text">Сауна/баня внутри дома</span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label class="calculator__radio custom-radio">
-                                                        <input class="custom-radio__input" type="radio" name="order[build5]" value="Пока без бани">
-                                                        <span class="custom-radio__text">Пока без бани</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>12 000</span> руб.</div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_6" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_6">
-                                        <div class="calculator__ask"><h3>Какая площадь?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-lg-6">
-                                                    <label class="calculator__number custom-number">
-                                                        <input class="custom-number__input" type="number" name="order[area]" value="100" min="1">                                                        
-                                                        <span class="custom-number__text">м<sup>2</sup></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>14 000</span> руб.</div>
-                                            </div>
-                                            <a class="calculator__button calculator__button-next-step border-btn" href="#step_id_7" >Дальше</a>
-                                        </div>
-                                    </div>
-                                    <div class="calculator__step" id="step_id_7">
-                                        <div class="calculator__ask"><h3>Ваши данные?</h3></div>
-                                        <div class="calculator__body">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">                                                    
-                                                    <input class="calculator__input custom-input" type="tel" name="order[name]" placeholder="Ваше имя">                                                    
-                                                </div>
-                                                <div class="col-sm-6">                                                    
-                                                    <input class="calculator__input custom-input" type="tel" name="order[phone]" placeholder="Ваш телефон" required>                                                    
-                                                </div>
-                                                <div class="col-sm-6">                                                    
-                                                    <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"></div>                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="calculator__bottom">
-                                            <div class="calculator__contacts-text">Оставьте ваши контакты, чтобы получить каталоги подходящих проектов с фотографиями и ценами.</div>
-                                            <div class="calculator__stock">
-                                                <div class="calculator__stock-title">Ваша скидка:</div>
-                                                <div class="calculator__stock-count"><span>22 000</span> руб.</div>
-                                            </div>
-                                            <button class="calculator__button border-btn">Оформить заказ</button>                                            
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- //Calculator section -->
-
-                <!-- Series Houses -->
-                <section class="index-page__series series-houses white-bg">
-                    <div class="container">
-                        <div class="section-small-line-title">
-                            <div class="h1">Серии домов</div>
-                        </div>
-                        <div class="series-houses__block">
-                            <div class="row gy-4 mb-4 mb-sm-5 mt-sm-4">
-                                <div class="col-sm-6 pe-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Каркасные дома</h4></div>
-                                            <div class="series-houses__desc">Строятся на основе каркаса из дерева, не уступают по преимуществам дома из кирпича и газобетона.</div>
-                                            <a class="series-houses__link" href="/karkasnye-doma/">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/karkasnye-doma/">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/karkasnie-doma.webp">
-                                                <img src="img/series/karkasnie-doma.jpg" alt="Каркасные дома">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 ps-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Дома из бруса</h4></div>
-                                            <div class="series-houses__desc">Строим дома из профилированного сухого бруса для сезонного и постоянного проживания.</div>
-                                            <a class="series-houses__link" href="/stroitelstvo/brusovye-doma/">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/stroitelstvo/brusovye-doma/">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/doma-iz-brusa.webp">
-                                                <img src="img/series/doma-iz-brusa.jpg" alt="Дома из бруса">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 pe-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Дома с мансардой</h4></div>
-                                            <div class="series-houses__desc">Большой выбор проектов и материалов. Возможность максимально задействовать площадь второго этажа.</div>
-                                            <a class="series-houses__link" href="/stroitelstvo/doma-s-mansardoj.php">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/stroitelstvo/doma-s-mansardoj.php">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/doma-s-mansardoy.webp">
-                                                <img src="img/series/doma-s-mansardoy.jpg" alt="Дома с мансардой">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 ps-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Финские дома</h4></div>
-                                            <div class="series-houses__desc">Строим недорогие и современные финские дома по скандинавской технологии.</div>
-                                            <a class="series-houses__link" href="/karkasnye-doma/finskie.php">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/karkasnye-doma/finskie.php">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/finskie-doma.webp">
-                                                <img src="img/series/finskie-doma.jpg" alt="Финские дома">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 pe-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Дома с гаражом</h4></div>
-                                            <div class="series-houses__desc">Для тех, кто ценит практичность и комфорт. Можно выбрать готовый проект или заказать индивидуальный.</div>
-                                            <a class="series-houses__link" href="/stroitelstvo/doma-s-garazhom.php">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/stroitelstvo/doma-s-garazhom.php">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/doma-s-garagom.webp">
-                                                <img src="img/series/doma-s-garagom.jpg" alt="Дома с гаражом">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 ps-xl-4">
-                                    <div class="series-houses__item">
-                                        <div class="series-houses__content">
-                                            <div class="series-houses__subtitle">Серия</div>
-                                            <div class="series-houses__title"><h4>Одноэтажные дома</h4></div>
-                                            <div class="series-houses__desc">Индивидуальность и практичность, которая не уступает многоэтажным домам по функциональности и площади.</div>
-                                            <a class="series-houses__link" href="/karkasnye-doma/odnojetazhnye.php">Подробнее</a>
-                                        </div>
-                                        <a class="series-houses__img"  href="/karkasnye-doma/odnojetazhnye.php">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/series/odnoetagnie-doma.webp">
-                                                <img src="img/series/odnoetagnie-doma.jpg" alt="Одноэтажные дома">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- //Series Houses -->
-
-                <!-- Our works -->
-                <section class="index-page__our-works main-our-works">
-                    <div class="container">
-                        <div class="section-small-line-title">
-                            <div class="h1">Наши работы</div>
-                        </div>
-                        <div class="main-our-works__grid mb-4">
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyj-dom-dom5-big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyj-dom-dom5-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyj-dom-dom5-small.jpg" alt="Каркасный дом про проекту Дом 5">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Каркасный дом по проекту Dom 5 <span>(ноябрь 2022)</span>                               
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyj-dom-agalatovo-big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyj-dom-agalatovo-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyj-dom-agalatovo-small.jpg" alt="Каркасный дом в Агалатово">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом в Агалатово <span>(ноябрь 2022)</span>                               
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyj-dom-kemi218-kobrino-big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyj-dom-kemi218-kobrino-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyj-dom-kemi218-kobrino-small.jpg" alt="Каркасный дом Кеми 218 в Кобрино">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом Кеми 218 <span>(октябрь 2022)</span>                               
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyy_dom_aro_big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyy_dom_aro-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyy_dom_aro-small.jpg" alt="Каркасный дом в Аро">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом в Аро <span>(август 2022)</span>                               
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyy_dom_slavyanka_big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyy_dom_slavyanka-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyy_dom_slavyanka-small.jpg" alt="Каркасный дом в Славянке">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом по проекту заказчика <span>(2022)</span>                              
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyy_dom_privetninskoe_big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyy_dom_privetninskoe-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyy_dom_privetninskoe-small.jpg" alt="Каркасный дом в Приветнинском">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом в Приветнинском <span>(июль 2022)</span>                           
-                                </div>
-                            </div>
-                            <div class="main-our-works__item">
-                                <a class="main-our-works__link" href="img/main-our-works/karkasnyy_dom_z57_big.jpg" data-fancybox="main-our-works" >
-                                    <picture>
-                                        <source type="image/webp" srcset="img/main-our-works/karkasnyy_dom_z57-small.webp">
-                                        <img class="main-our-works__img" src="img/main-our-works/karkasnyy_dom_z57-small.jpg" alt="Каркасный дом по проекту Z57">
-                                    </picture>                                
-                                </a>
-                                <div class="main-our-works__desc">
-                                    Дом по проекту Z-57 <span>(июнь 2022)</span>                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </section>
-                <!-- //Our works -->
-
-                <!-- Content index page -->
-                <section class="index-page__content white-bg">
+                <!-- Content catalog page -->
+                <section class="page__content white-bg">
                     <div class="container">
                         <div class="section-line-title">
                             <h2>Строительство загородных домов <br>
@@ -1177,7 +685,7 @@
                         </div>
                         <p>Строительство загородных домов производится в&nbsp;полном соответствии нормам СНиП и&nbsp;правилам техники безопасности, что гарантирует высокие эксплуатационные характеристики всех возводимых зданий. Дома отличаются отличными теплоизоляционными свойствами, благодаря чему в&nbsp;помещениях создается комфортный микроклимат. Все применяемые материалы обладают официальными сертификатами, подтверждающими их&nbsp;полную экологическую безопасность. Цены на&nbsp;сайте указаны с&nbsp;учетом доставки материала и&nbsp;сборки дома на&nbsp;участке.</p>
 
-                        <div class="index-page__tabs main-tabs tabs"> 
+                        <div class="page__tabs main-tabs tabs"> 
                             <div class="tabs__caption main-tabs__caption">
                                 <button class="tabs__btn main-tabs__btn" type="button">Варианты загородного строительства</button>
                                 <button class="tabs__btn main-tabs__btn active" type="button">Мы предлагаем</button>
@@ -1351,14 +859,6 @@
                     </div>
                 </section>
                 <!-- //Content index page -->
-
-                <!-- Map Section -->
-                <section class="index-page__map">
-                    <div class="portfolio-map" id="map">  
-                        <div class="portfolio-map__text">Более 273 построенных обьектов</div>                                         
-                    </div>
-                </section>                
-                <!-- //Map Section -->
 
             </main>
             <footer class="footer">

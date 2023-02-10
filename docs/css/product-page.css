@@ -1,0 +1,37 @@
+.list-houses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0;
+  gap: 5px;
+}
+@media (max-width: 575px) {
+  .list-houses__item {
+    width: 49%;
+  }
+}
+.list-houses__link {
+  display: block;
+  text-align: center;
+}
+.list-houses__link:hover .list-houses__title {
+  text-decoration: underline;
+}
+.list-houses__img {
+  width: 205px;
+  height: 170px;
+  object-fit: contain;
+}
+@media (max-width: 575px) {
+  .list-houses__img {
+    width: auto;
+    height: auto;
+  }
+}
+.list-houses__title {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+}
