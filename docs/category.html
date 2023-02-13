@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Категория</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	
+	<link rel="stylesheet" href="css/style.css"><!-- Стили, которые повторяются на всех страницах -->
+	<link rel="stylesheet" href="css/base.css"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
+	<link rel="stylesheet" href="css/product-page.css"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__fixed">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__content">
+                    <div class="top-header__logo">
+                        <a class="top-header__logo-link" href="/">
+                            <img src="img/logo.png" alt="Логотип Дом навек изображения">
+                        </a>
+                    </div>
+                    <div class="top-header__slogan-col">
+                        <div class="top-header__slogan-wrap">
+                            <p class="top-header__slogan">Мы помогаем обрести уют!</p>
+                        </div>
+                        <div class="top-header__search search">
+                            <form>
+                                <div class="search__input-wrap">
+                                    <input class="search__input" name="text" type="text" placeholder="Поиск по сайту">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-header__info">
+                        <div class="top-header__time">
+                            <p>Пн-Пт с 10:00 до 18:00</p>
+                            <p>Сб с 11:00 до 18:00</p>
+                        </div>
+                        <div class="top-header__phone">
+                            <a class="top-header__phone-link" href="tel:88123098141">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                                </svg>
+                                + 7 (812) 309-81-41</a>
+                        </div>
+                    </div>
+                    <div class="top-header__btn-col">
+                        <a class="top-header__btn border-btn link-modal-js" href="#modal-call">Отправить заявку</a>
+                    </div>
+                </div>   
+            </div>
+         
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="container">
+                <div class="bottom-header__content">
+                    <button class="bottom-header__menu-mobile d-xl-none" type="button">
+                        <span></span>
+                    </button>
+                    <nav class="bottom-header__nav">                        
+                        <ul class="bottom-header__list">
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/stroitelstvo/">Строительство</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/karkasnye-doma/">Каркасные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/brusovye-doma/">Брусовые дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/gazobetonnye-doma/">Дома из газобетона</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/derevjannye-doma/">Деревянные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/dachnye-doma/">Дачные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/premium/">Премиум дома <img src="img/icons/icon__star.png" alt="Премиум"></a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/bani/">Бани</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/stroitelstvo/dom-30-days/">Дом за 30 дней</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/postroennye/">Построенные дома</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/ceny/kalkulyator-stroitelstva.php">Калькулятор</a></li>
+                            <li class="bottom-header__item bottom-header__item--akcii"><a class="bottom-header__link" href="/akcii.php">Акции</a></li>
+                            <li class="bottom-header__item">
+                                <span class="bottom-header__link">Клиентам</span>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/">Цены</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/kredit-ipoteka.php">Кредит</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/materinskij-kapital.php">Мат. капитал</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/garantii.php">Гарантия</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/voprosy-otvety.php/">Вопросы-ответы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/oplata.php">Оплата</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/dostavka.php/">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/about.php">О компании</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">                        
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/uslugi.php">Услуги</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/otzyvy/">Отзывы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/history.php">История</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stati/">Статьи</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/partnery.php">Партнеры</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/vakansii.php">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/contacts.php">Контакты</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--compare" href="/stroitelstvo/compares/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                </svg>
+                                <span>4</span></a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--favorite" href="/stroitelstvo/favorite/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                </svg>
+                                <span>0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="page catalog-page">
+
+                <!-- Breadcrumbs -->
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Каркасные дома</span>
+                            </li>                                    
+                        </ol>                                
+                    </nav>
+                </div>
+                <!-- //Breadcrumbs -->
+
+                <!-- Slider Block -->
+                <div class="container">
+                    <div class="stock-slider">
+                        <div class="stock-slider__block">
+                          <div class="stock-slider__swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="stock-slider__slide swiper-slide">
+                              <div class="stock-slide">
+                                  <div class="stock-slide__img">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/slide-3.webp">
+                                        <img src="img/slide-3.jpg" alt="Бурение ямы для свай">
+                                    </picture>                                
+                                  </div>
+                                  <div class="stock-slide__desc">
+                                    <div class="stock-slide__text">При заказе строительства дома на любом фундаменте в нашей компании – <span>пробное бурение БЕСПЛАТНО!</span></div>
+                                    <!--noindex-->
+                                    <a class="stock-slider__btn main-btn link-modal-js" href="#modal-call">Заказать дом</a>
+                                    <!--/noindex-->
+                                  </div>
+                                </div>
+                                </div>
+                              <div class="stock-slider__slide swiper-slide">
+                              <div class="stock-slide">
+                                  <div class="stock-slide__img">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/slide-4.webp">
+                                        <img src="img/slide-4.jpg" alt="Льготная ипотека">
+                                    </picture>
+                                  </div>
+                                  <div class="stock-slide__desc">
+                                    <div class="stock-slide__text"><span>Льготная ипотека</span> на индивидуальное жилищное строительство от 0,1%!</div>
+                                    <div class="stock-slide__data">до 31 декабря 2023 г</div>
+                                    <!--noindex-->
+                                    <a class="stock-slider__btn main-btn link-modal-js" href="#modal-call">Заказать дом</a>
+                                    <!--/noindex-->
+                                  </div>
+                                </div>
+                              </div>  
+                            </div>                   
+                          </div>
+                          <div class="stock-slider__pagination swiper-pagination"></div> 
+                        </div>        
+                    </div>
+                </div>
+                <!-- //Slider Block -->
+
+                <!-- First text section -->
+                <section>
+                    <div class="container">
+                        <div class="section-line-title">
+                            <h1>Каркасные дома под ключ</h1>
+                        </div>
+                        <p>Компания «Дом на Век» занимается строительством  каркасных домов в Санкт-Петербурге и Ленинградской области. Строим недорого, с фундаментом — от маленьких домиков до комфортабельных больших коттеджей. На сайте показаны типовые проекты, но по запросу клиента в них можно сделать перепланировку, изменить комплектацию или заказать полностью новое проектирование. В каталоге сайта есть разные проекты — от недорогих каркасных домиков до коттеджей комфорт-класса с расширенной площадью. У всех указана стоимость, размещены фото с планировками.</p>
+                        <div class="catalog-links">
+                            <div class="row gy-4">
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/karkasnye-doma/proekty.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/proekt.webp">
+                                            <img class="catalog-links__img" src="img/catalog/proekt.jpg" alt="Готовые проекты каркасных домов">
+                                        </picture>
+                                        <div class="catalog-links__title">Проекты каркасных домов</div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/ceny/">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/stroitelstvo.webp">
+                                            <img class="catalog-links__img" src="img/catalog/stroitelstvo.jpg" alt="Процесс строительства">
+                                        </picture>
+                                        <div class="catalog-links__title">Цена строительства</div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/postroennye/">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/foto.webp">
+                                            <img class="catalog-links__img" src="img/catalog/foto.jpg" alt="Фото готовых домов">
+                                        </picture>
+                                        <div class="catalog-links__title">Фотографии каркасных домов</div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/ceny/kalkulyator-stroitelstva.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/raschet.webp">
+                                            <img class="catalog-links__img" src="img/catalog/raschet.jpg" alt="Рассчитать стоимость каркасного дома">
+                                        </picture>
+                                        <div class="catalog-links__title">Расчет стоимости каркасника</div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/tehnologii/karkas.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/tehnolog.webp">
+                                            <img class="catalog-links__img" src="img/catalog/tehnolog.jpg" alt="Каркасная технология строительства">
+                                        </picture>
+                                        <div class="catalog-links__title">Технология строительства</div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2">
+                                    <a class="catalog-links__item" href="/tehnologii/">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/material.webp">
+                                            <img class="catalog-links__img" src="img/catalog/material.jpg" alt="Материалы для постройки дома">
+                                        </picture>
+                                        <div class="catalog-links__title">Материалы каркасных домов</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="align-center">
+                            <h2>Проекты каркасных домов</h2>
+                        </div>
+                        <button class="main-btn tags-collaps-btn collaps-btn-js d-sm-none" type="button" data-collapsed-enabled="Фильтр проектов" data-collapsed-disabled="Скрыть фильтр">Фильтр проектов</button>
+                        <div class="collaps-wrapper-sm mb-30">
+                            <div class="catalog-projects-tabs tabs">
+                                <button class="catalog-projects-tabs__collaps-btn collaps-btn-js d-md-none" type="button" data-collapsed-enabled=" Выбрать параметр:" data-collapsed-disabled="Скрыть параметры">Выбрать параметр:</button>
+                                <div class="collaps-wrapper-md">
+                                    <div class="catalog-projects-tabs__caption tabs__caption">
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Все проекты</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Цена</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn active" type="button">Размер</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Площадь</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Этажность</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Тип</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Стиль</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Конструктив</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Количество спален</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">По назначению</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Технология</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Форма</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Тип крыши</button>
+                                        <button class="catalog-projects-tabs__btn tabs__btn" type="button">Другое</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="catalog-projects-tabs__wrap tabs__wrap ">
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty.php">готовые проекты</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/karkasno-shhitovye-doma.php">каркасно-щитовые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/panelnye.php">панельные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/elitnye.php">элитные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/krasivye.php">красивые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-fotootchetom.php">с фотоотчетом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/pod-ipoteku.php">под ипотеку</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/po-akcii.php">по акции</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/novinki.php">новинки</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-otlichnoy-planirovkoy.php">с отличной планировкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ekonom.php">эконом-класса</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/polutoraetazhnye.php">полутораэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/odnojetazhnye.php">одноэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dvuhetazhnye.php">двухэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-mansardoj.php">с мансардой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-3x6.php">6х3</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x4.php">6x4</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/5x6.php">6x5</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x6.php">6x6</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x7.php">6x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-6x8.php">6x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x9.php">6x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-6x12.php">6x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x5.php">7x5</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x7.php">7x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x8.php">7x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x9.php">7x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-4x8.php">8x4</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x8.php">8x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x9.php">8x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x10.php">8x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x11.php">8x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/9x9.php">9x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-9x10.php">9x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/9x12.php">9x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x7.php">10x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x6.php">10x6</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x10.php">10x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x11.php">10x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x12.php">10x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x7.php">11x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x9.php">11x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x11.php">11x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/12x8.php">12x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/12x12.php">12x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/13x10.php">13x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/15x8.php">15x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/nebolshie.php">небольшие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/bolshie-ot-200-kv-m.php">строительство больших каркасников</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-100-m2.php">до 100 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-150-m2.php">до 150 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-160-m2.php">до 160 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-200-m2.php">до 200 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/100-m2.php">100 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/150-m2.php">150 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/200-m2.php">200 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/120-m2.php">120 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/40-m2.php">40 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/50-m2.php">50 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/60-m2.php">60 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/70-m2.php">70 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/80-m2.php">80 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/110-m2.php">110 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/130-m2.php">130 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/140-m2.php">140 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/160-m2.php">160 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/170-m2.php">170 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/180-m2.php">180 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/250-m2.php">250 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ekonom.php">недорогие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-500-tysyach-rublej.php">до 500 тыс. руб.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ot-500-tys-do-1-mln-rub.php">до 1 млн. руб.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-15-millionov-rub.php">до 1,5 миллионов рублей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ot-1-milliona-rub.php">более 1 млн. руб.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kotelnoj.php">с котельной</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-panoramnymi-oknami.php">с панорамными окнами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-s-terrasoj.php">с террасой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-erkerom.php">с эркером</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kommunikaciyami.php">с коммуникациями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-cokolnym-etazhom.php">с цокольным этажом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-valmovoj-kryshej.php">с вальмовой крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-odnoskatnoj-kryshej.php">с односкатной крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/so-vtorym-svetom.php">со вторым светом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-verandoj.php">с верандой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-saunoj.php">с сауной или баней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-balkonom.php">с балконом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-bolshimi-oknami.php">с большими окнами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-garazhom.php">с гаражом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvumya-vhodami.php">с двумя входами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dormerom.php">с дормером</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-krylcom.php">с крыльцом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-sanuzlom.php">с санузлом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-podvalom.php">с подвалом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkasnye-kottedzhi.php">каркасные коттеджи</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-pechkoy.php">с печкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kuhney.php">с кухней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-navesom.php">с навесом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-cherdakom.php">с чердаком</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kaminom.php">с камином</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/finskie.php">финские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/finskie-odnoetazhnye.php">финские 1 этаж</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/norvezhskie.php">норвежские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kanadskie.php">канадские дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/shale.php">шале</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/hi-tech.php">хай-тек</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/sovremennye.php">современные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/v-stile-modern.php">в стиле модерн</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/amerikanskie.php">американские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/shvedskie.php">шведские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/skandinavskie.php">скандинавские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/nemetskie.php">по немецкой технологии</a>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/fahverkovyy.php">фахверковые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/loft.php">лофт</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/minimalizm.php">минимализм</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-odnoy-spalney.php">с одной спальней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvumya-spalnyami.php">с двумя спальнями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-tremya-spalnyami.php">с тремя спальнями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chetyrmya-spalnyami.php">с четырьмя спальнями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/zimnie.php">зимние под ключ</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dlya-postoyannogo-prozhivaniya.php">для постоянного проживания</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dachnye.php">дачные домики</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/letnie.php">летние</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/gostevye.php">гостевые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/sadovye.php">садовые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkas-150-mm.php">каркас 150 мм</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkas-200-mm.php">каркас 200 мм</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/uglovye.php">угловые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kvadratnye.php">квадратные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/pryamougolnye.php">прямоугольные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/uzkie.php">узкие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dlya-uzkih-uchastkov.php">для узких участков</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kukushkoy.php">с кукушкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvuhskatnoy-kryshey.php">с двухскатной</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-pryamoy-kryshey.php">с прямой </a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-ploskoy-kryshey.php">с плоской крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-lomanoy-kryshey.php">с ломаной </a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-poluvalmovoy-kryshey.php">с полувальмовой крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-asimmetrichnoy-kryshey.php">с асимметричной крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-teplym-konturom.php">с теплым контуром</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chistovoy-otdelkoy.php">с чистовой отделкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chernovoy-otdelkoy.php">с черновой отделкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/modulnye.php">Модульные каркасные дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kombinirovannye.php">Комбинированные каркасные дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/na-dve-semi.php">на две семьи</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/taunhausy.php">таунхаусы</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/na-svayah.php">на сваях</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ekonom.php">недорогие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-500-tysyach-rublej.php">до 500 тыс. руб.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ot-500-tys-do-1-mln-rub.php">до 1 млн. руб.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-15-millionov-rub.php">до 1,5 миллионов рублей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ot-1-milliona-rub.php">более 1 млн. руб.</a></li>                                     
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content active">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-3x6.php">6х3</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x4.php">6x4</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/5x6.php">6x5</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x6.php">6x6</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x7.php">6x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-6x8.php">6x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/6x9.php">6x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-6x12.php">6x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x5.php">7x5</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x7.php">7x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x8.php">7x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/7x9.php">7x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-4x8.php">8x4</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x8.php">8x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x9.php">8x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x10.php">8x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/8x11.php">8x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/9x9.php">9x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-9x10.php">9x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/9x12.php">9x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x7.php">10x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x6.php">10x6</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x10.php">10x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x11.php">10x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/10x12.php">10x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x7.php">11x7</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x9.php">11x9</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/11x11.php">11x11</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/12x8.php">12x8</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/12x12.php">12x12</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/13x10.php">13x10</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/15x8.php">15x8</a></li>                                    
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/polutoraetazhnye.php">полутораэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/odnojetazhnye.php">одноэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dvuhetazhnye.php">двухэтажные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-mansardoj.php">с мансардой</a></li>       
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/nebolshie.php">небольшие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/bolshie-ot-200-kv-m.php">строительство больших каркасников</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-100-m2.php">до 100 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-150-m2.php">до 150 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-160-m2.php">до 160 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/do-200-m2.php">до 200 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/100-m2.php">100 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/150-m2.php">150 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/200-m2.php">200 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/120-m2.php">120 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/40-m2.php">40 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/50-m2.php">50 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/60-m2.php">60 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/70-m2.php">70 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/80-m2.php">80 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/110-m2.php">110 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/130-m2.php">130 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/140-m2.php">140 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/160-m2.php">160 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/170-m2.php">170 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/180-m2.php">180 кв. м.</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/250-m2.php">250 кв. м.</a></li>                
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty.php">готовые проекты</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/stroitelstvo/karkasno-shhitovye-doma.php">каркасно-щитовые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/panelnye.php">панельные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/elitnye.php">элитные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/krasivye.php">красивые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-fotootchetom.php">с фотоотчетом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/pod-ipoteku.php">под ипотеку</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/po-akcii.php">по акции</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/novinki.php">новинки</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-otlichnoy-planirovkoy.php">с отличной планировкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/ekonom.php">эконом-класса</a></li>             
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/finskie.php">финские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/finskie-odnoetazhnye.php">финские 1 этаж</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/norvezhskie.php">норвежские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kanadskie.php">канадские дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/shale.php">шале</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/hi-tech.php">хай-тек</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/sovremennye.php">современные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/v-stile-modern.php">в стиле модерн</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/amerikanskie.php">американские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/shvedskie.php">шведские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/skandinavskie.php">скандинавские</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/nemetskie.php">по немецкой технологии</a>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/fahverkovyy.php">фахверковые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/loft.php">лофт</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/minimalizm.php">минимализм</a></li>             
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kotelnoj.php">с котельной</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-panoramnymi-oknami.php">с панорамными окнами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/proekty-s-terrasoj.php">с террасой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-erkerom.php">с эркером</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kommunikaciyami.php">с коммуникациями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-cokolnym-etazhom.php">с цокольным этажом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-valmovoj-kryshej.php">с вальмовой крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-odnoskatnoj-kryshej.php">с односкатной крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/so-vtorym-svetom.php">со вторым светом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-verandoj.php">с верандой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-saunoj.php">с сауной или баней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-balkonom.php">с балконом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-bolshimi-oknami.php">с большими окнами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-garazhom.php">с гаражом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvumya-vhodami.php">с двумя входами</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dormerom.php">с дормером</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-krylcom.php">с крыльцом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-sanuzlom.php">с санузлом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-podvalom.php">с подвалом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkasnye-kottedzhi.php">каркасные коттеджи</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-pechkoy.php">с печкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kuhney.php">с кухней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-navesom.php">с навесом</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-cherdakom.php">с чердаком</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kaminom.php">с камином</a></li>         
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-odnoy-spalney.php">с одной спальней</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvumya-spalnyami.php">с двумя спальнями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-tremya-spalnyami.php">с тремя спальнями</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chetyrmya-spalnyami.php">с четырьмя спальнями</a></li> 
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/zimnie.php">зимние под ключ</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dlya-postoyannogo-prozhivaniya.php">для постоянного проживания</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dachnye.php">дачные домики</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/letnie.php">летние</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/gostevye.php">гостевые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/sadovye.php">садовые</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkas-150-mm.php">каркас 150 мм</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/karkas-200-mm.php">каркас 200 мм</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/uglovye.php">угловые</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kvadratnye.php">квадратные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/pryamougolnye.php">прямоугольные</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/uzkie.php">узкие</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/dlya-uzkih-uchastkov.php">для узких участков</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-kukushkoy.php">с кукушкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-dvuhskatnoy-kryshey.php">с двухскатной</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-pryamoy-kryshey.php">с прямой </a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-ploskoy-kryshey.php">с плоской крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-lomanoy-kryshey.php">с ломаной </a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-poluvalmovoy-kryshey.php">с полувальмовой крышей</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-asimmetrichnoy-kryshey.php">с асимметричной крышей</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <ul class="projects-list">
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-teplym-konturom.php">с теплым контуром</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chistovoy-otdelkoy.php">с чистовой отделкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/s-chernovoy-otdelkoy.php">с черновой отделкой</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/modulnye.php">Модульные каркасные дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/kombinirovannye.php">Комбинированные каркасные дома</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/na-dve-semi.php">на две семьи</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/taunhausy.php">таунхаусы</a></li>
+                                            <li class="projects-list__item"><a class="projects-list__link" href="/karkasnye-doma/na-svayah.php">на сваях</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>                        
+                        
+                    </div>  
+                </section>
+                <!-- //First text section -->
+
+                <!-- Catalog section -->
+                <section class="page__catalog catalog">
+                    <div class="container">
+                        <form class="catalog__sort-filter sort-filter">
+                            <fieldset class="sort-filter__item">
+                                <span>Сортировка:</span>
+                                <select class="sort-filter__sort">
+                                    <option value="default">По умолчанию</option>
+                                    <option value="price_up">Цена по возрастанию</option>
+                                    <option value="price_down">Цена по убыванию</option>
+                                    <option value="m2_up">Площадь по возрастанию</option>
+                                    <option value="m2_down">Площадь по убыванию</option>
+                                    <option value="size_up">Габариты по возрастанию</option>
+                                    <option value="size_down">Габариты по убыванию</option>
+                                </select>                                
+                            </fieldset>
+                        </form>
+                        <div class="catalog__list row gy-4" id="mse2_results">
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#">                                            
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-1.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-1.jpg" alt="Проект 1">
+                                            </picture>                                            
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        <div class="prod-item__vendor-code">z71</div>
+                                        <div class="prod-item__add-to"> 
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                15х11 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                81.00 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">от 861 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--new"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#"> 
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-2.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-2.jpg" alt="Проект 2">
+                                            </picture>
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        <div class="prod-item__vendor-code">z39</div>
+                                        <div class="prod-item__add-to">                                           
+                                    
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                6х9 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                84.80 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">969 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--stock"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#"> 
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-3.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-3.jpg" alt="Проект 3">
+                                            </picture>
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        <div class="prod-item__vendor-code">as-178</div>
+                                        <div class="prod-item__add-to">                                           
+                                    
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                6х10 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                89.50 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">1 134 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-4.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-4.jpg" alt="Проект 4">
+                                            </picture>
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        
+                                        <div class="prod-item__vendor-code">z71</div>
+                                        <div class="prod-item__add-to">                                           
+                                    
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                15х11 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                81.00 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">от 861 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--new"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#"> 
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-5.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-5.jpg" alt="Проект 5">
+                                            </picture>
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        <div class="prod-item__vendor-code">z39</div>
+                                        <div class="prod-item__add-to">                                           
+                                    
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                6х9 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                84.80 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">969 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ms2_product col-sm-6 col-lg-4">
+                                <form method="post" class="ms2_form catalog__item prod-item">
+                                    <input type="hidden" name="id" value="">
+                                    <input type="hidden" name="count" value="1">
+                                    <input type="hidden" name="options" value="[]">
+                                    <div class="prod-item__mark prod-item__mark--stock"></div>
+                                    <div class="prod-item__top">
+                                        <a class="prod-item__img-link" href="#"> 
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/proect-6.webp">
+                                                <img class="prod-item__img" src="img/catalog/proect-6.jpg" alt="Проект 6">
+                                            </picture>
+                                            <div class="prod-item__hidden-text">
+                                                Скрытый текст описания дома
+                                            </div>
+                                        </a>
+                                        <div class="prod-item__vendor-code">as-178</div>
+                                        <div class="prod-item__add-to">                                           
+                                    
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item__bottom">
+                                        <a class="prod-item__title" href="#">Каркасный дом</a>
+                                        <ul class="prod-item__feature">
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                                                </svg>
+                                                6х10 м
+                                            </li>
+                                            <li class="prod-item__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area"></use>
+                                                </svg>
+                                                89.50 м<sup>2</sup>
+                                            </li>                                            
+                                        </ul>
+                                        <div class="prod-item__offer">
+                                            <div class="prod-item__price">1 134 000 руб.</div>
+                                            <a class="prod-item__link" href="#">подробнее</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //Catalog section -->
+
+                <!-- Questions form  -->
+                <div class="container">
+                    <section class="page__questions questions-form__wrapper">                    
+                        <form class="questions-form">
+                            <div class="questions-form__title">
+                                У вас остались вопросы?
+                            </div>
+                            <div class="questions-form__text">
+                                Звоните по телефонам:
+                            </div>
+                            <div class="questions-form__phones">
+                                <a class="questions-form__phone" href="tel:88123098141" >8 (812) 309 81 41</a>
+                                <a class="questions-form__phone" href="tel:88129452538" >8 (812) 945 25 38</a>
+                            </div>
+                            <div class="questions-form__text">
+                                Или оставьте заявку:
+                            </div>
+                            <div class="questions-form__inputs">
+                                <input class="questions-form__input custom-input" type="text" name="order[name]" placeholder="Ваше имя:">
+                                <input class="questions-form__input custom-input" type="tel" name="order[phone]" placeholder="Ваш телефон:">
+                                <textarea class="questions-form__textarea custom-textarea" placeholder="Комментарий:" name="order[text]"></textarea>
+                            </div>
+                            
+                            <div class="questions-form__captcha">
+                                <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                            </div>
+                            <button class="questions-form__btn" type="submit">Отправить</button>
+                            <label class="questions-form__check custom-checkbox">
+                                <input class="custom-checkbox__input" type="checkbox" checked required>
+                                <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+                            </label>
+                        </form>                  
+                    </section>
+                </div>
+                <!-- //Questions form  -->
+
+                <!-- Content catalog page -->
+                <section class="page__content">
+                    <div class="container">
+                        <p>Каркасные дома славятся рядом преимуществ, таких как невысокая стоимость, быстрое строительство, имеют отличную тепло- и звукоизоляцию, много вариаций наружных&nbsp;фасадов и внутренней отделки. Можно заказать коттедж с балконом, встроенным гаражом, мансардой, любым количеством спален или хозяйственных помещений, дверей, на ленточном или свайно-винтовом фундаменте, с различными&nbsp;видами кровли и типами крыши — двухскатной, односкатной, плоской.&nbsp;Благодаря разной толщине утеплителя, можно строить каркасные дома как для сезонного, так&nbsp;и постоянного проживания.</p>
+                        <div class="align-center">
+                            <h2>Как мы работаем</h2>
+                        </div>
+                        
+                        <p>Наша компания предлагает строительство под ключ недорогих каркасных домов любого вида и сложности. Все этапы&nbsp;работ&nbsp;мы выполняем без привлечения сторонних организаций, а только силами наших специалистов и собственных бригад. Строим дома любой формы и площади. Самые популярные проекты, которые у нас заказывают — 5х8, 6х9, 7х7, 7х8,&nbsp;7х9, 8х11, 8х12, 9х9,&nbsp;9х10, 9х11,&nbsp;10х10 метров. У нас собственное&nbsp;производство каркасов, что позволяет значительно уменьшать стоимость строительства.&nbsp;Используем только качественные материалы. Любой каркасный дом можно <a href="/ceny/kredit-ipoteka.php">купить в кредит</a> или оформить рассрочку.</p>                          
+                    </div>
+                </section>
+                <section class="page__content white-bg">
+                    <div class="container">
+                        <div class="page__tabs main-tabs tabs"> 
+                            <div class="tabs__caption main-tabs__caption">
+                                <button class="tabs__btn main-tabs__btn" type="button">Мы предлагаем</button>
+                                <button class="tabs__btn main-tabs__btn active" type="button">Преимущества</button>
+                                <button class="tabs__btn main-tabs__btn" type="button">Партнеры</button>
+                            </div>
+                            <div class="tabs__wrap main-tabs__wrap">
+                                <div class="tabs__content">                                    
+                                    <ul>
+                                        <li>Осуществление всех строительных работ на основе действующих правил и норм.</li>
+                                        <li>Заключение договора, где прописываются сроки сдачи, гарантия, риски, окончательная цена.</li>
+                                        <li>Возможность выбора типового проекта или разработки индивидуального, который будет создан дизайнером с учётом специфики участка, а также&nbsp;личных пожеланий заказчика.</li>
+                                        <li>Точное соблюдение&nbsp;сроков, согласно подписанному&nbsp;договору.</li>
+                                        <li>Предоставление гарантийных обязательств на качество всех выполняемых работ.</li>
+                                        <li>В окончательную цену проекта входят консультации, бесплатный выезд нашего специалиста на объект, строительные материалы, доставка, использование спецтехники, монтаж строения.</li>
+                                        <li>Готовые одноэтажные или двухэтажные здания со сборкой на участке.</li>
+                                    </ul>                                    
+                                </div>
+                                <div class="tabs__content active">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="video-block">
+                                                <div class="video-block__wrap">
+                                                    <iframe width="100%" src="https://www.youtube.com/embed/a20PXQ3TrZc" allowfullscreen></iframe>
+                                                </div>                                    
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="light-border-block">
+                                                <ul class="square-list">
+                                                    <li>Срок службы каркасного дома более 100 лет.</li>
+                                                    <li>Экологичность. Безопасность материалов подтверждается официальными сертификатами.</li>
+                                                    <li>Высокая&nbsp;скорость возведения&nbsp;— от начала работ до сдачи проекта требуется всего 1–2 месяца.</li>
+                                                    <li>Надёжность здания, ведь каркасная технология обеспечивает&nbsp;высокую&nbsp;прочность всей конструкции.</li>
+                                                    <li>Отсутствие усадки, что является ещё одной причиной, быстрого строительства.</li>
+                                                    <li>Каркасные дома очень тёплые, что позволяет снизить затраты на отопление.</li>
+                                                    <li>Дерево «дышит», создавая внутри помещений полезный для здоровья микроклимат.</li>
+                                                    <li>Возможна постройка жилого дома по уникальному дизайнерскому проекту в любом архитектурном стиле для постоянного проживания.</li>
+                                                </ul>
+                                            </div>
+                                        </div>                                        
+                                    </div>                                    
+                                </div>
+                                <div class="tabs__content">
+                                    <div class="partners-block">
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-1.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-1.jpg" alt="Флонтек">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-2.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-2.jpg" alt="Braas">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-3.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-3.jpg" alt="Vortex">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-4.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-4.jpg" alt="Сбербанк">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-5.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-5.jpg" alt="Россельхозбанк">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-6.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-6.jpg" alt="Евробион">
+                                            </picture>
+                                        </div>
+                                        <div class="partners-block__item">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/partners/partner-7.webp">
+                                                <img class="partners-block__img" src="img/partners/partner-7.jpg" alt="Юнилос">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <p>Стоимость готового&nbsp;каркасного дома&nbsp;определяется выбранной комплектацией и материалами. Ориентировочные цены указаны под каждой карточкой проекта. В них входят&nbsp;работы под ключ с доставкой материалов на участок. Чтобы получить&nbsp;консультацию&nbsp;обо всех условиях сотрудничества.&nbsp;Закажите обратный звонок —&nbsp;в ближайшее время наш менеджер вам перезвонит. Или сами свяжитесь&nbsp;с нами&nbsp;по номеру&nbsp;<a href="tel:+78123098141">+7 (812) 309−81−41</a>.&nbsp;Мы поможем подобрать подходящий проект, дадим всю&nbsp;информацию о сотрудничестве.&nbsp;Рассчитать&nbsp;стоимость более точно можно при личной встрече у нас в офисе или во время выезда&nbsp;специалиста&nbsp;к вам на участок.</p>                
+                    </div>
+                </section>
+                <!-- //Content index page -->
+
+                <!-- Сompleted block -->
+                <section class="page__completed-block">
+                    <div class="container">
+                        <div class="align-center">
+                            <h3>Построенные дома</h3>
+                        </div>
+                        <div class="completed-block row gy-4 mt-3 mb-5">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-267.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-1.webp">
+                                            <img src="img/сompleted/сompleted-1.jpg" alt="Проект 1 z44">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-267.php">Построенный дом по проекту Z-44</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                118.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                9.08 х 9.18 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-267.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-288.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-2.webp">
+                                            <img src="img/сompleted/сompleted-2.jpg" alt="Проект Иматра 182">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-288.php">Построенный дом по проекту Иматра 182</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                178.88 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                12.96 х 11.48 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-288.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-334.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-3.webp">
+                                            <img src="img/сompleted/сompleted-3.jpg" alt="Проект Каркасный дом по индивидуальному проекту">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-334.php">Построенный дом 8х8 по индивидуальному проекту</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                0.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                8 х 8 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-334.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-336.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-4.webp">
+                                            <img src="img/сompleted/сompleted-4.jpg" alt="Проект Каркасный дом по проекту Дублин">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-336.php">Построенный дом по проекту Дублин</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                0.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                9.00 х 11.50 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-336.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-337.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-5.webp">
+                                            <img src="img/сompleted/сompleted-5.jpg" alt="Проект Каркасный дом по индивидуальному проекту">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-337.php">Построенный дом 8х7,5 по индивидуальному проекту</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                0.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                8.00 х 7.50 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-337.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-350.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-6.webp">
+                                            <img src="img/сompleted/сompleted-6.jpg" alt="Проект Каркасный дом по проекту заказчика.">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-350.php">Построенный дом 10х8,5 по проекту заказчика</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                0.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                8.00 х 10.00 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-350.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-353.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-7.webp">
+                                            <img src="img/сompleted/сompleted-7.jpg" alt="Проект Каркасный дом 8,5х8,5 по проекту заказчика.">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-353.php">Построенный дом 8,5х8,5 по проекту заказчика</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                72.25 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                8.50 х 8.50 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-353.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-354.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-8.webp">
+                                            <img src="img/сompleted/сompleted-8.jpg" alt="Проект Каркасный дом 7х7 плюс терраса 2х3 по проекту заказчика.">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-354.php">Построенный дом 7х7 с террасой 2х3 по проекту заказчика</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                0.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                7.00 х 7.00 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-354.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="completed-block__item">                                            
+                                    <a class="completed-block__img" href="/postroennye/model-363.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/сompleted/сompleted-9.webp">
+                                            <img src="img/сompleted/сompleted-9.jpg" alt="Проект Каркасный дом 9х9 с террасой 9х2 по проекту заказчика">
+                                        </picture> 
+                                    </a>    
+                                    <div class="completed-block__content">
+                                        <a class="completed-block__title" href="/postroennye/model-363.php">Построенный дом 9х9 с террасой по проекту заказчика</a>
+                                        <ul class="completed-block__feature">
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                                </svg>
+                                                81.00 м<sup>2</sup>
+                                            </li>
+                                            <li class="completed-block__feature-item">
+                                                <svg class="icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                                </svg>
+                                                9.00 х 9.00 м
+                                            </li>                                            
+                                        </ul>
+                                        <!--noindex-->
+                                        <div class="completed-block__bottom">
+                                            <a class="completed-block__link main-btn" href="/postroennye/model-363.php">Подробнее</a>
+                                            <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                        </div> 
+                                        <!--/noindex-->
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </section>
+                <!-- //Сompleted block -->
+
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__logo-col">
+                <a class="footer__logo" href="/">
+                    <img src="img/logo.png" alt="Логотип Дом навек футер">
+                </a>
+            </div>
+            <div class="footer__info-col">
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="/contacts.php">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Санкт-Петербург, пр. Обуховской Обороны, д. 271. Лит. А, оф. 607</a>
+                </div>
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="mailto:info@dom-navek.com">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#at"></use>
+                        </svg>
+                        info@dom-navek.com</a>
+                      
+                </div>                
+            </div>
+            <div class="footer__phone-col">                
+                <a class="footer__phone" href="tel:+78123098141">
+                    <svg class="footer__phone-icon icon-svg">
+                        <use xlink:href="img/icons/sprite-icons.svg#phone-2"></use>
+                    </svg>
+                + 7 (812) 309-81-41</a>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="https://www.youtube.com/channel/UClaZ7FTvgJJGbYnFrbqWzUA" target="_blank"><img src="img/icons/youtube.png" alt="youtube"></a>
+                    <a class="footer__social-link" href="https://m.vk.com/domnavek" target="_blank"><img src="img/icons/vk.png" alt="vk"></a>
+                    <!--<a class="footer__social-link" href="https://www.instagram.com/domanavek/" target="_blank"><img src="img/icons/instagram.png" alt="instagram"></a>-->
+                </div>
+            </div>
+            <div class="footer__links-col">                
+                <p class="footer__gtext"><a href="/politika.php">Политика конфиденциальности</a></p>
+                <p class="footer__gtext"><a href="/sitemap/">Карта сайта</a> </p>
+                <p class="footer__gtext">Сделано в <a href="https:/newclients1.ru/" target="_blank">Новые клиенты</a></p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals-->
+
+<!-- //Modals-->
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AJ7r-1sBAAAAlF0OZwIALWFHKSYSQmTbJCEsjBy7-O-OhzUAAAAAAAAAAACE3KdPiBtUmWSECH3uliTBrzjwiA=="></script>
+<script src="js/main.js"></script> 
+<script src="js/page.js"></script> 
+        </div>  
+    </body>
+</html>
