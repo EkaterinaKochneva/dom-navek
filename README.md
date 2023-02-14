@@ -1,3 +1,4 @@
 1. https://ekaterinakochneva.github.io/dom-navek/
-2. http://localhost:3000/catalog.html
-3. http://localhost:3000/category.html
+2. https://ekaterinakochneva.github.io/dom-navek/catalog.html
+3. https://ekaterinakochneva.github.io/dom-navek/category.html
+4. https://ekaterinakochneva.github.io/dom-navek/product.html

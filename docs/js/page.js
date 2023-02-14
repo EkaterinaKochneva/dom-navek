@@ -21,7 +21,40 @@ $(document).ready(function(){
             el: '.stock-slider__pagination',
             clickable: true,
           },
+	});
 
+    const swiperProductThumbs = new Swiper('.product-thumbs__swiper', {
+
+		slidesPerView: 'auto',
+		spaceBetween: 5,
+
+        navigation: {			
+			prevEl: '.product-thumbs__btn-prev',
+            nextEl: '.product-thumbs__btn-next'
+		  },
+
+	});
+	const swiperProduct = new Swiper('.product-slider__swiper', {
+
+		slidesPerView: 1,
+		draggable: true,
+
+		thumbs: {
+			swiper: swiperProductThumbs,
+		  },
+        navigation: {			
+        prevEl: '.product-slider__btn-prev',
+        nextEl: '.product-slider__btn-next'
+        },
+	});
+
+    //Плавный скролл и активация таба комплектации в карточке
+	$(".product-equipment-link--js").on("click", function (e) {
+		e.preventDefault();
+		let get_id = $(this).attr('href');
+        let target = $(get_id).offset().top - 200; 
+		$("html, body").animate({ scrollTop: target }, 500);
+		$(get_id)[0].click(); 
 	});
 
 })

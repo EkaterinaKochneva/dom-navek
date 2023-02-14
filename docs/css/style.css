@@ -4154,8 +4154,9 @@
   --main-color-font: #000000;
   --grey-color-font: #454545;
   --accent-color: #b61f11;
-  --accent-color-hover: #be291d;
+  --accent-color-hover: #de2e21;
   --grey: #777777;
+  --grey-2: #9eb2cb;
   --light-grey: #cccccc;
   --light-grey-2: #eeeeee;
   --bg-color: #F4F5F6;
@@ -4401,7 +4402,7 @@ main p:not([class]) {
 .border-btn {
   display: inline-block;
   border: 2px solid var(--accent-color);
-  border-radius: 7px;
+  border-radius: 5px;
   color: var(--accent-color);
   background-color: var(--white);
   text-align: center;
@@ -4420,7 +4421,7 @@ main p:not([class]) {
   color: var(--white);
   text-align: center;
   background-color: var(--accent-color);
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 10px 20px;
   transition: all 0.2s ease;
 }
@@ -4645,6 +4646,7 @@ main ul:not([class]) li::before {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 10;
 }
 .prod-item__add-to .comparison {
   display: inline-block;

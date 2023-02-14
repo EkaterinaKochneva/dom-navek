@@ -154,7 +154,7 @@ main p:not([class]) {
 .border-btn {
   display: inline-block;
   border: 2px solid var(--accent-color);
-  border-radius: 7px;
+  border-radius: 5px;
   color: var(--accent-color);
   background-color: var(--white);
   text-align: center;
@@ -173,7 +173,7 @@ main p:not([class]) {
   color: var(--white);
   text-align: center;
   background-color: var(--accent-color);
-  border-radius: 7px;
+  border-radius: 5px;
   padding: 10px 20px;
   transition: all 0.2s ease;
 }
@@ -398,6 +398,7 @@ main ul:not([class]) li::before {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 10;
 }
 .prod-item__add-to .comparison {
   display: inline-block;
