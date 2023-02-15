@@ -27,4 +27,19 @@ $(document).ready(function(){
 			.closest('.tabs').find('.tabs__content').hide().removeClass('active')
 			.eq($(this).index()).fadeIn(50).addClass('active');
 	});
+
+	// Прокрутка наверх страницы
+	$(window).on('scroll', function () {
+		if ($(this).scrollTop() > 100) {
+			$('.button-up').addClass('scroll');
+		} else {
+			$('.button-up').removeClass('scroll');
+		}
+	});
+	$('.button-up').click(function(){
+		$('body,html').animate({
+		scrollTop: 0
+		}, 500);
+		return false;
+	});
 })

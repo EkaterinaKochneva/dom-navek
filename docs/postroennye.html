@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Построенные проекты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	
+	<link rel="stylesheet" href="css/style.css"><!-- Стили, которые повторяются на всех страницах -->
+	<link rel="stylesheet" href="css/base.css"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
+	<link rel="stylesheet" href="css/"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__fixed">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__content">
+                    <div class="top-header__logo">
+                        <a class="top-header__logo-link" href="/">
+                            <img src="img/logo.png" alt="Логотип Дом навек изображения">
+                        </a>
+                    </div>
+                    <div class="top-header__slogan-col">
+                        <div class="top-header__slogan-wrap">
+                            <p class="top-header__slogan">Мы помогаем обрести уют!</p>
+                        </div>
+                        <div class="top-header__search search">
+                            <form>
+                                <div class="search__input-wrap">
+                                    <input class="search__input" name="text" type="text" placeholder="Поиск по сайту">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-header__info">
+                        <div class="top-header__time">
+                            <p>Пн-Пт с 10:00 до 18:00</p>
+                            <p>Сб с 11:00 до 18:00</p>
+                        </div>
+                        <div class="top-header__phone">
+                            <a class="top-header__phone-link" href="tel:88123098141">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                                </svg>
+                                + 7 (812) 309-81-41</a>
+                        </div>
+                    </div>
+                    <div class="top-header__btn-col">
+                        <a class="top-header__btn border-btn link-modal-js" href="#modal-call">Отправить заявку</a>
+                    </div>
+                </div>   
+            </div>
+         
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="container">
+                <div class="bottom-header__content">
+                    <button class="bottom-header__menu-mobile d-xl-none" type="button">
+                        <span></span>
+                    </button>
+                    <nav class="bottom-header__nav">                        
+                        <ul class="bottom-header__list">
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/stroitelstvo/">Строительство</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/karkasnye-doma/">Каркасные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/brusovye-doma/">Брусовые дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/gazobetonnye-doma/">Дома из газобетона</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/derevjannye-doma/">Деревянные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/dachnye-doma/">Дачные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/premium/">Премиум дома <img src="img/icons/icon__star.png" alt="Премиум"></a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/bani/">Бани</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/stroitelstvo/dom-30-days/">Дом за 30 дней</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/postroennye/">Построенные дома</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/ceny/kalkulyator-stroitelstva.php">Калькулятор</a></li>
+                            <li class="bottom-header__item bottom-header__item--akcii"><a class="bottom-header__link" href="/akcii.php">Акции</a></li>
+                            <li class="bottom-header__item">
+                                <span class="bottom-header__link">Клиентам</span>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/">Цены</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/kredit-ipoteka.php">Кредит</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/materinskij-kapital.php">Мат. капитал</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/garantii.php">Гарантия</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/voprosy-otvety.php/">Вопросы-ответы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/oplata.php">Оплата</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/dostavka.php/">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/about.php">О компании</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">                        
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/uslugi.php">Услуги</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/otzyvy/">Отзывы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/history.php">История</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stati/">Статьи</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/partnery.php">Партнеры</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/vakansii.php">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/contacts.php">Контакты</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--compare" href="/stroitelstvo/compares/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                </svg>
+                                <span>4</span></a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--favorite" href="/stroitelstvo/favorite/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                </svg>
+                                <span>0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="page">
+
+                <!-- Breadcrumbs -->
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="/stroitelstvo/">Строительство</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Построенные дома</span>
+                            </li>                                    
+                        </ol>         
+                    </nav>
+                </div>
+                <!-- //Breadcrumbs -->
+
+                <div class="container">
+                    <div class="page__title">
+                        <h1>Построенные дома</h1>
+                    </div>
+                    <div class="completed-block row gy-4 mb-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-267.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-1.webp">
+                                        <img src="img/сompleted/сompleted-1.jpg" alt="Проект 1 z44">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-267.php">Построенный дом по проекту Z-44</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            118.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            9.08 х 9.18 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-267.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-288.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-2.webp">
+                                        <img src="img/сompleted/сompleted-2.jpg" alt="Проект Иматра 182">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-288.php">Построенный дом по проекту Иматра 182</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            178.88 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            12.96 х 11.48 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-288.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-334.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-3.webp">
+                                        <img src="img/сompleted/сompleted-3.jpg" alt="Проект Каркасный дом по индивидуальному проекту">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-334.php">Построенный дом 8х8 по индивидуальному проекту</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            0.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            8 х 8 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-334.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-336.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-4.webp">
+                                        <img src="img/сompleted/сompleted-4.jpg" alt="Проект Каркасный дом по проекту Дублин">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-336.php">Построенный дом по проекту Дублин</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            0.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            9.00 х 11.50 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-336.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-337.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-5.webp">
+                                        <img src="img/сompleted/сompleted-5.jpg" alt="Проект Каркасный дом по индивидуальному проекту">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-337.php">Построенный дом 8х7,5 по индивидуальному проекту</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            0.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            8.00 х 7.50 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-337.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-350.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-6.webp">
+                                        <img src="img/сompleted/сompleted-6.jpg" alt="Проект Каркасный дом по проекту заказчика.">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-350.php">Построенный дом 10х8,5 по проекту заказчика</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            0.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            8.00 х 10.00 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-350.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-353.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-7.webp">
+                                        <img src="img/сompleted/сompleted-7.jpg" alt="Проект Каркасный дом 8,5х8,5 по проекту заказчика.">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-353.php">Построенный дом 8,5х8,5 по проекту заказчика</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            72.25 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            8.50 х 8.50 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-353.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-354.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-8.webp">
+                                        <img src="img/сompleted/сompleted-8.jpg" alt="Проект Каркасный дом 7х7 плюс терраса 2х3 по проекту заказчика.">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-354.php">Построенный дом 7х7 с террасой 2х3 по проекту заказчика</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            0.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            7.00 х 7.00 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-354.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="completed-block__item">                                            
+                                <a class="completed-block__img" href="/postroennye/model-363.php">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/сompleted/сompleted-9.webp">
+                                        <img src="img/сompleted/сompleted-9.jpg" alt="Проект Каркасный дом 9х9 с террасой 9х2 по проекту заказчика">
+                                    </picture> 
+                                </a>    
+                                <div class="completed-block__content">
+                                    <div class="completed-block__desc">Каркасный дом</div>
+                                    <a class="completed-block__title" href="/postroennye/model-363.php">Построенный дом 9х9 с террасой по проекту заказчика</a>
+                                    <ul class="completed-block__feature">
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#pencil"></use>
+                                            </svg>
+                                            81.00 м<sup>2</sup>
+                                        </li>
+                                        <li class="completed-block__feature-item">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#area-2"></use>
+                                            </svg>
+                                            9.00 х 9.00 м
+                                        </li>                                            
+                                    </ul>
+                                    <!--noindex-->
+                                    <div class="completed-block__bottom">
+                                        <a class="completed-block__link main-btn" href="/postroennye/model-363.php">Подробнее</a>
+                                        <a class="completed-block__link border-btn link-modal-js" href="#order-call">Хочу такой дом</a>
+                                    </div> 
+                                    <!--/noindex-->
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </main>
+            <div class="button-up scroll"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__logo-col">
+                <a class="footer__logo" href="/">
+                    <img src="img/logo.png" alt="Логотип Дом навек футер">
+                </a>
+            </div>
+            <div class="footer__info-col">
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="/contacts.php">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Санкт-Петербург, пр. Обуховской Обороны, д. 271. Лит. А, оф. 607</a>
+                </div>
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="mailto:info@dom-navek.com">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#at"></use>
+                        </svg>
+                        info@dom-navek.com</a>
+                      
+                </div>                
+            </div>
+            <div class="footer__phone-col">                
+                <a class="footer__phone" href="tel:+78123098141">
+                    <svg class="footer__phone-icon icon-svg">
+                        <use xlink:href="img/icons/sprite-icons.svg#phone-2"></use>
+                    </svg>
+                + 7 (812) 309-81-41</a>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="https://www.youtube.com/channel/UClaZ7FTvgJJGbYnFrbqWzUA" target="_blank"><img src="img/icons/youtube.png" alt="youtube"></a>
+                    <a class="footer__social-link" href="https://m.vk.com/domnavek" target="_blank"><img src="img/icons/vk.png" alt="vk"></a>
+                    <!--<a class="footer__social-link" href="https://www.instagram.com/domanavek/" target="_blank"><img src="img/icons/instagram.png" alt="instagram"></a>-->
+                </div>
+            </div>
+            <div class="footer__links-col">                
+                <p class="footer__gtext"><a href="/politika.php">Политика конфиденциальности</a></p>
+                <p class="footer__gtext"><a href="/sitemap/">Карта сайта</a> </p>
+                <p class="footer__gtext">Сделано в <a href="https:/newclients1.ru/" target="_blank">Новые клиенты</a></p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals-->
+
+<!-- //Modals-->
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/yastatic-share.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AJ7r-1sBAAAAlF0OZwIALWFHKSYSQmTbJCEsjBy7-O-OhzUAAAAAAAAAAACE3KdPiBtUmWSECH3uliTBrzjwiA=="></script>
+<script src="js/main.js"></script> 
+<script src="js/page.js"></script> 
+        </div>  
+    </body>
+</html>
