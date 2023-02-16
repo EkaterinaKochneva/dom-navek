@@ -57,4 +57,10 @@ $(document).ready(function(){
 		$(get_id)[0].click(); 
 	});
 
+    //Раскрытие описания в выполненных проектах
+	$(".completed-description__btn-more").on("click", function () {
+        $(this).prev().addClass('visible');
+        $(this).fadeOut(50);
+	});
+
 })

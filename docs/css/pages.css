@@ -1,0 +1,56 @@
+.calc-quiz__step {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-2);
+}
+.calc-quiz__ask {
+  font-size: 19px;
+  padding: 5px;
+  background: #d9eccf;
+  margin-bottom: 30px;
+}
+.calc-quiz__info {
+  margin: 10px 0 30px;
+}
+.calc-quiz__info span {
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .calc-quiz__info {
+    margin-bottom: 15px;
+  }
+}
+.calc-quiz__radio {
+  text-align: center;
+}
+.calc-quiz__radio input {
+  appearance: none;
+}
+.calc-quiz__radio input:focus + img {
+  box-shadow: 0 0 5px 0 var(--accent-color);
+}
+.calc-quiz__radio img {
+  border-radius: 10px;
+  border: 4px solid var(--light-grey);
+  margin-bottom: 10px;
+}
+.calc-quiz__radio span {
+  display: block;
+  font-size: 14px;
+  color: var(--grey-color-font);
+}
+.calc-quiz__progress {
+  margin-top: 35px;
+}
+.calc-quiz__progress-line {
+  background: var(--light-grey);
+  border-radius: 3px;
+  height: 8px;
+  overflow: hidden;
+}
+.calc-quiz__progress-bar {
+  background: var(--accent-color);
+  border-radius: 3px;
+  height: 8px;
+}

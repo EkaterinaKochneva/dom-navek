@@ -4,3 +4,5 @@
 4. https://ekaterinakochneva.github.io/dom-navek/product.html
 5. https://ekaterinakochneva.github.io/dom-navek/akcii.html
 6. https://ekaterinakochneva.github.io/dom-navek/postroennye.html
+7. https://ekaterinakochneva.github.io/dom-navek/product-completed.html
+8. https://ekaterinakochneva.github.io/dom-navek/kalkulyator.html
