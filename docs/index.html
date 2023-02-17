@@ -1217,7 +1217,7 @@
                                                 <div class="house-materials__main-img">
                                                     <picture>
                                                         <source type="image/webp" srcset="img/house-materials/dom-materiali.webp">
-                                                        <img data-src="img/house-materials/dom-materiali.jpg" alt="Загородный дом в разрезе">
+                                                        <img src="img/house-materials/dom-materiali.jpg" alt="Загородный дом в разрезе">
                                                     </picture>
                                                 </div>
                                                 <div class="house-materials__info house-materials__info-1" data-number="1">
@@ -1225,7 +1225,7 @@
                                                     <div class="house-materials__show house-materials__show-1" data-da=".house-materials__show-for-mobile,767,1">
                                                         <picture>
                                                             <source type="image/webp" srcset="img/house-materials/krisha.webp">
-                                                            <img data-src="img/house-materials/krisha.jpg" alt="Крыша">
+                                                            <img src="img/house-materials/krisha.jpg" alt="Крыша">
                                                         </picture>
                                                     </div>
                                                 </div>
@@ -1234,7 +1234,7 @@
                                                     <div class="house-materials__show house-materials__show-2" data-da=".house-materials__show-for-mobile,767,1">
                                                         <picture>
                                                             <source type="image/webp" srcset="img/house-materials/cherepica.webp">
-                                                            <img data-src="img/house-materials/cherepica.jpg" alt="Кровельное покрытие">
+                                                            <img src="img/house-materials/cherepica.jpg" alt="Кровельное покрытие">
                                                         </picture>
                                                     </div>
                                                 </div>
@@ -1243,7 +1243,7 @@
                                                     <div class="house-materials__show house-materials__show-3" data-da=".house-materials__show-for-mobile,767,1">
                                                         <picture>
                                                             <source type="image/webp" srcset="img/house-materials/doski.webp">
-                                                            <img data-src="img/house-materials/doski.jpg" alt="Пиломатериал">
+                                                            <img src="img/house-materials/doski.jpg" alt="Пиломатериал">
                                                         </picture>
                                                     </div>
                                                 </div>
@@ -1252,7 +1252,7 @@
                                                     <div class="house-materials__show house-materials__show-4" data-da=".house-materials__show-for-mobile,767,1">
                                                         <picture>
                                                             <source type="image/webp" srcset="img/house-materials/pol.webp">
-                                                            <img data-src="img/house-materials/pol.jpg" alt="Отделка пола">
+                                                            <img src="img/house-materials/pol.jpg" alt="Отделка пола">
                                                         </picture>
                                                     </div>
                                                 </div>
@@ -1261,7 +1261,7 @@
                                                     <div class="house-materials__show house-materials__show-5" data-da=".house-materials__show-for-mobile,767,1">
                                                         <picture>
                                                             <source type="image/webp" srcset="img/house-materials/stena.webp">
-                                                            <img data-src="img/house-materials/stena.jpg" alt="Стены">
+                                                            <img src="img/house-materials/stena.jpg" alt="Стены">
                                                         </picture>
                                                     </div>
                                                 </div>
@@ -1414,7 +1414,7 @@
             <div class="footer__links-col">                
                 <p class="footer__gtext"><a href="/politika.php">Политика конфиденциальности</a></p>
                 <p class="footer__gtext"><a href="/sitemap/">Карта сайта</a> </p>
-                <p class="footer__gtext">Сделано в <a href="https:/newclients1.ru/" target="_blank">Новые клиенты</a></p>
+                <p class="footer__gtext">Сделано в <a href="https://newclients1.ru/" target="_blank">Новые клиенты</a></p>
                 
             </div>
         </div>
@@ -1422,6 +1422,46 @@
 </footer>
 
 <!-- Modals-->
+<div class="modal" id="modal-call" style="display: none">
+	<div class="modal__title">
+		Отправить заявку на рассчет
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <input class="form-call__file" id="UserFile1" name="user_file1" placeholder="Файл" type="file">
+        <input class="form-call__file" id="UserFile2" name="user_file2" placeholder="Файл" type="file">
+        <input class="form-call__file" id="UserFile3" name="user_file3" placeholder="Файл" type="file">
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked="" required="">
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<div class="modal" id="modal-warranty" style="display: none">
+	<div class="modal__title">
+		Сообщить о гарантийном случае
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked="" required="">
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
 
 <!-- //Modals-->
 

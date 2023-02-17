@@ -6,3 +6,5 @@
 6. https://ekaterinakochneva.github.io/dom-navek/postroennye.html
 7. https://ekaterinakochneva.github.io/dom-navek/product-completed.html
 8. https://ekaterinakochneva.github.io/dom-navek/kalkulyator.html
+9. https://ekaterinakochneva.github.io/dom-navek/contacts.html
+10. https://ekaterinakochneva.github.io/dom-navek/garantii.html

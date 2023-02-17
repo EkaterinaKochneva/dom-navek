@@ -1,8 +1,46 @@
+.page__row {
+  display: flex;
+  gap: 0 30px;
+}
+.page__sidebar {
+  flex: 0 0 220px;
+  max-width: 220px;
+}
+@media (max-width: 1199px) {
+  .page__sidebar {
+    display: none;
+  }
+}
+.page__body {
+  min-width: 0;
+  flex-grow: 1;
+}
+.page__top-banner {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.page__top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.calc-quiz {
+  margin: 30px 0;
+}
 .calc-quiz__step {
   padding: 20px;
   border-radius: 10px;
   background-color: var(--white);
   border: 1px solid var(--light-grey-2);
+}
+.calc-quiz__step:not(.active) {
+  display: none;
 }
 .calc-quiz__ask {
   font-size: 19px;
@@ -22,7 +60,10 @@
   }
 }
 .calc-quiz__radio {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  cursor: pointer;
 }
 .calc-quiz__radio input {
   appearance: none;
@@ -53,4 +94,228 @@
   background: var(--accent-color);
   border-radius: 3px;
   height: 8px;
+}
+.calc-quiz__area {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.calc-quiz__area img {
+  width: 250px;
+}
+.calc-quiz__area-inputs input {
+  display: block;
+  padding: 10px;
+  border: 1px solid #436531;
+  width: 235px;
+}
+.calc-quiz__area-input {
+  margin-bottom: 20px;
+}
+.calc-quiz__area-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.calc-quiz__area-btn {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.calc-quiz__area-btn:hover {
+  border-color: var(--accent-color);
+}
+.calc-quiz__last-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.calc-quiz__input {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.calc-quiz__input::placeholder {
+  color: var(--accent-color);
+}
+.calc-quiz__captcha {
+  margin-bottom: 20px;
+}
+.calc-quiz__btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.contacts-block {
+  margin-bottom: 30px;
+}
+.contacts-block__title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.contacts-block__text {
+  margin-bottom: 5px;
+}
+
+.messengers {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0;
+}
+.messengers__item {
+  display: block;
+}
+.messengers__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.messengers__item--telegramm {
+  color: #1296C9;
+}
+.messengers__item--viber {
+  color: #734188;
+}
+.messengers__item--whatsapp {
+  color: #1EB250;
+}
+.messengers__item--skype {
+  color: #00AFF0;
+}
+
+.sidebar__promo {
+  display: block;
+  margin: 20px 0;
+  padding: 20px;
+  height: 140px;
+}
+
+.menu-sidebar__item.active .menu-sidebar__link {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+.menu-sidebar__link {
+  display: block;
+  text-decoration: underline;
+  padding: 10px 5px 10px 35px;
+  border-bottom: 1px dashed var(--light-grey);
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-image: url(../img/icons/bulet-square.png);
+  background-repeat: no-repeat;
+  background-position: center left 15px;
+}
+.menu-sidebar__link:hover {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+
+.calc-sidebar {
+  background-image: url(../img/bg_sidebar_calc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.calc-sidebar__title {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.calc-sidebar__desc {
+  font-size: 13px;
+  color: var(--main-color-font);
+  font-weight: 500;
+  width: 55%;
+  line-height: 1.5;
+}
+
+.built-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../img/bg_buld_houses.jpg);
+  text-align: center;
+}
+.built-sidebar__title {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.social-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.social-block__link {
+  display: block;
+}
+
+.warranty-block__item {
+  background-color: var(--bg-color);
+  text-align: center;
+}
+.warranty-block__img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+}
+.warranty-block__img picture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.warranty-block__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.warranty-block__content {
+  padding: 20px 10px;
+}
+.warranty-block__title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.warranty-form {
+  position: relative;
+  padding: 50px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  background-image: url(../img/warranty/g_form_bottom.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin: 20px 0;
+}
+@media (max-width: 991px) {
+  .warranty-form {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .warranty-form::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.4;
+  }
+}
+.warranty-form__btn {
+  text-transform: uppercase;
+  position: relative;
+}
+.warranty-form ul {
+  position: relative;
 }

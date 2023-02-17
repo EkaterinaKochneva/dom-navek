@@ -5053,3 +5053,48 @@ a.prod-item__title:hover {
     font-size: 16px;
   }
 }
+
+.modal {
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--white);
+  background-image: url(../img/bg_wrapper.png);
+}
+.modal__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.form-call {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.form-call__input {
+  margin-bottom: 10px;
+}
+.form-call__input::placeholder {
+  color: var(--accent-color);
+  font-size: 14px;
+}
+.form-call__textarea {
+  height: 85px;
+  margin-bottom: 15px;
+}
+.form-call__textarea::placeholder {
+  font-size: 14px;
+}
+.form-call__file {
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+.form-call__btn {
+  margin: 15px auto;
+}
+.form-call__check {
+  font-size: 12px;
+  color: var(--grey-color-font);
+}

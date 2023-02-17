@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-	<title>Акции</title>
+	<title>Гарантия</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 
@@ -10,7 +10,7 @@
 	
 	<link rel="stylesheet" href="css/style.css"><!-- Стили, которые повторяются на всех страницах -->
 	<link rel="stylesheet" href="css/base.css"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
-	<link rel="stylesheet" href="css/"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/pages.css"><!-- Стили, для отдельных видов страниц-->	
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 
@@ -135,8 +135,7 @@
         </div>
     </div>
 </header>
-            <main class="page">
-
+            <main class="page white-bg">
                 <!-- Breadcrumbs -->
                 <div class="container">
                     <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
@@ -145,73 +144,145 @@
                                 <a href="/">Главная</a>
                             </li>
                             <li class="breadcrumbs__item">
-                                <span>Акции</span>
+                                <span>Гарантия на строительство</span>
                             </li>                                    
                         </ol>         
                     </nav>
                 </div>
                 <!-- //Breadcrumbs -->
-
-                <!-- Stock Block -->
                 <div class="container">
                     <div class="page__title">
-                        <h1>Акции</h1>
+                        <h1>Гарантия на строительство</h1>
                     </div>
-                    <div class="stock-block">
-                        <div class="stock-block__item">
-                            <div class="row">
-                                <div class="col-lg-6 col-xl-5">
-                                    <div class="stock-block__left">
-                                        <div class="stock-block__picture">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/stock/bur.webp">
-                                                <img class="stock-block__img" src="img/stock/bur.jpg" alt="Акция пробное бурение">
-                                            </picture>
+
+                    <div class="page__row">
+                        <aside class="page__sidebar sidebar">
+                            <nav class="sidebar__menu menu-sidebar">
+                                <ul class="menu-sidebar__list">
+                                    <li class="menu-sidebar__item active">
+                                        <span class="menu-sidebar__link">Гарантии</span>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">История компании</a>
+                                    </li>                         
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Вопросы-ответы</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Новости</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Партнеры</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Ипотека</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Полезные статьи</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="sidebar__promo calc-sidebar" href="/ceny/kalkulyator-stroitelstva.php">
+                                <div class="calc-sidebar__title">Калькулятор</div>
+                                <div class="calc-sidebar__desc">Расчет стоимости дома</div>
+                            </a>
+                            <a class="sidebar__promo built-sidebar" href="/postroennye/">
+                                <div class="built-sidebar__title">Построенные дома</div>
+                            </a>
+                            <div class="sidebar__social social-block">
+                                <a class="social-block__link" href="https://www.youtube.com/channel/UClaZ7FTvgJJGbYnFrbqWzUA" target="_blank">
+                                    <img src="img/icons/youtube.png" alt="youtube">
+                                </a>
+                                <a class="social-block__link" href="https://m.vk.com/domnavek" target="_blank">
+                                    <img src="img/icons/vk.png" alt="vk">
+                                </a>
+                            </div>
+                        </aside>
+                        <div class="page__body">
+                            <div class="page__top-banner">
+                                <picture>
+                                    <source type="image/webp" srcset="img/garantii_head.webp">
+                                    <img src="img/garantii_head.jpg" alt="Гарантия на строительство">
+                                </picture>
+                            </div>
+                            <div class="page__content">
+                                <p>Наша компания предоставляет гарантию на&nbsp;все работы по&nbsp;строительству домов, бань, коттеджей из&nbsp;бруса и&nbsp;каркасного типа.</p>
+                                <div class="page__subtitle">Гарантия распространяется на:</div>
+                                <ul class="marker__list">
+                                    <li>герметичность крыш</li>
+                                    <li>целостность отдельных элементов</li>
+                                    <li>целостность конструкции в целом</li>
+                                    <li>несоблюдение отдельных требований ГОСТов во время строительства</li>
+                                    <li>превышение 5-ти процентного порога усадки конструкции из бруса.</li>
+                                </ul>
+                                <div class="page__subtitle">Сроки гарантии:</div>
+                                <div class="warranty-block">
+                                    <div class="row gx-2">
+                                        <div class="col-md-4">
+                                            <div class="warranty-block__item">
+                                                <div class="warranty-block__img">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/warranty/warranty-1.webp">
+                                                        <img src="img/warranty/warranty-1.jpg" alt="Дома из бруса">
+                                                    </picture>
+                                                </div>
+                                                <div class="warranty-block__content">
+                                                    <div class="warranty-block__title">Дома из бруса</div>
+                                                    <div class="warranty-block__desc">Срок гарантии - 1 год</div>
+                                                </div>
+                                            </div>                                            
                                         </div>
-                                        <div class="stock-block__info">
-                                            <div class="stock-block__title">Пробное бурение БЕСПЛАТНО</div>
-                                            <div class="stock-block__date">бессрочно</div>
-                                            <div class="stock-block__desc">БЕСПЛАТНО при строительстве дома с фундаментом!</div>
-                                            <div class="stock-block__count">26 человек воспользовались</div>
+                                        <div class="col-md-4">
+                                            <div class="warranty-block__item">
+                                                <div class="warranty-block__img">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/warranty/warranty-2.webp">
+                                                        <img src="img/warranty/warranty-2.jpg" alt="Каркасные дома">
+                                                    </picture>
+                                                </div>
+                                                <div class="warranty-block__content">
+                                                    <div class="warranty-block__title">Каркасные дома</div>
+                                                    <div class="warranty-block__desc">Срок гарантии - 2 годa</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">                                            
+                                            <div class="warranty-block__item">
+                                                <div class="warranty-block__img">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="img/warranty/warranty-3.webp">
+                                                        <img src="img/warranty/warranty-3.jpg" alt="Дома из газобетона">
+                                                    </picture>
+                                                </div>
+                                                <div class="warranty-block__content">
+                                                    <div class="warranty-block__title">Дома из газобетона</div>
+                                                    <div class="warranty-block__desc">Срок гарантии - 2 годa</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-xl-7">
-                                    <div class="stock-block__text">
-                                        При заказе строительства загородного дома на фундаменте, наша компания БЕСПЛАТНО проведёт пробное бурение для определения состава и структуры грунта на участке. Это необходимо для выяснения типа необходимого фундамента и расчёта глубины его монтажа.
-                                    </div>
+                                <p>В&nbsp;случае обнаружения дефектов в&nbsp;течении действия гарантии, мы&nbsp;обязуемся их&nbsp;устранить абсолютно бесплатно в&nbsp;14-ти дневный срок.</p>
+                                <p>Гарантийный срок, а&nbsp;также все гарантийные случаи прописываются в&nbsp;договоре, который мы&nbsp;подписываем со&nbsp;своими клиентами.</p>
+                                <p>В&nbsp;нашем штате находятся специальные бригады, единственная задача которых&nbsp;&mdash; обеспечение гарантийного и&nbsp;пост-гарантийного обслуживания наших клиентов. Безопасность и&nbsp;качество&nbsp;&mdash; основные приоритеты, которыми мы&nbsp;руководствуемся в&nbsp;своей деятельности по&nbsp;возведению загородной недвижимости.</p>
+                                <div class="warranty-form">
+                                    <ul class="marker__list">
+                                        <li>Все сроки и условия строго прописаны в договоре</li>
+                                        <li>Выезд бригады для исправление дефектов в 14-ти дневный срок</li>
+                                        <li>Строжайшее соблюдение ГОСТов и СНИПов</li>
+                                    </ul>
+                                    <a class="warranty-form__btn main-btn link-modal-js" href="#modal-warranty">сообщить о гарантийном случае</a>                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="stock-block__item">
-                            <div class="row">
-                                <div class="col-lg-6 col-xl-5">
-                                    <div class="stock-block__left">
-                                        <div class="stock-block__picture">
-                                            <picture>
-                                                <source type="image/webp" srcset="img/stock/sbo.webp">
-                                                <img class="stock-block__img" src="img/stock/sbo.jpg" alt="СБО на 5 человек">
-                                            </picture>
-                                        </div>
-                                        <div class="stock-block__info">
-                                            <div class="stock-block__title">СБО на 5 человек</div>
-                                            <div class="stock-block__date">до 15 февраля 2023 г</div>
-                                            <div class="stock-block__desc">Доставим, установим и подключим за 110 000 руб.!</div>
-                                            <div class="stock-block__count">23 человека воспользовались</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-7">
-                                    <div class="stock-block__text">
-                                        При строительстве загородного дома в комплектации под ключ, мы установим вам станцию биологической очистки на 5 человек за 110 000 руб. Что позволит вам сразу после завершения строительства почувствовать комфорт проживания, как в городской квартире (УОСВ на 5 человек с самотёчным сбросом, общая длина подводящей/отводящей магистрали 10 м).
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
+                    
                 </div>
-                
-                <!-- //Stock Block -->
+
 
             </main>
             <div class="button-up"></div>

@@ -63,4 +63,11 @@ $(document).ready(function(){
         $(this).fadeOut(50);
 	});
 
+    //Калькулятор квиз на странице kalkulyator.html
+
+    $(".calc-quiz__radio, .calc-quiz__area-btn").click(function () {
+		$(this).parents(".calc-quiz__step").removeClass("active");
+		$(this).parents(".calc-quiz__step").next().addClass("active");
+	});
+
 })

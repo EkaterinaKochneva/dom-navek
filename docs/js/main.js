@@ -20,6 +20,29 @@ $(document).ready(function(){
 		}
 	});
 
+    // Модальные окна
+	const link = ".link-modal-js";
+	$(link).fancybox({
+		arrows: false,
+		infobar: false,
+		touch: false,
+		type: 'inline',
+		autoFocus: false,
+		i18n: {
+			en: {
+				CLOSE: "Закрыть",
+				NEXT: "Вперед",
+				PREV: "Назад" 
+
+			}
+		}
+	});
+	$(".modal-close-js").click(function () {
+		$.fancybox.close();
+	});
+	$.fancybox.defaults.backFocus = false;
+    
+
 	 // Tabs
 	 $('.tabs__caption').on('click', '.tabs__btn:not(.active)', function (e) {
 		$(this)
@@ -27,6 +50,7 @@ $(document).ready(function(){
 			.closest('.tabs').find('.tabs__content').hide().removeClass('active')
 			.eq($(this).index()).fadeIn(50).addClass('active');
 	});
+
 
 	// Map
     const map_markers = [
