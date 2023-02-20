@@ -8,3 +8,4 @@
 8. https://ekaterinakochneva.github.io/dom-navek/kalkulyator.html
 9. https://ekaterinakochneva.github.io/dom-navek/contacts.html
 10. https://ekaterinakochneva.github.io/dom-navek/garantii.html
+11. https://ekaterinakochneva.github.io/dom-navek/house-30-days.html

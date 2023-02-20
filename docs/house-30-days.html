@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Дом за 30 дней</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	
+	<link rel="stylesheet" href="css/style.css"><!-- Стили, которые повторяются на всех страницах -->
+	<link rel="stylesheet" href="css/base.css"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
+	<link rel="stylesheet" href="css/product-page.css"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__fixed">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__content">
+                    <div class="top-header__logo">
+                        <a class="top-header__logo-link" href="/">
+                            <img src="img/logo.png" alt="Логотип Дом навек изображения">
+                        </a>
+                    </div>
+                    <div class="top-header__slogan-col">
+                        <div class="top-header__slogan-wrap">
+                            <p class="top-header__slogan">Мы помогаем обрести уют!</p>
+                        </div>
+                        <div class="top-header__search search">
+                            <form>
+                                <div class="search__input-wrap">
+                                    <input class="search__input" name="text" type="text" placeholder="Поиск по сайту">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-header__info">
+                        <div class="top-header__time">
+                            <p>Пн-Пт с 10:00 до 18:00</p>
+                            <p>Сб с 11:00 до 18:00</p>
+                        </div>
+                        <div class="top-header__phone">
+                            <a class="top-header__phone-link" href="tel:88123098141">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                                </svg>
+                                + 7 (812) 309-81-41</a>
+                        </div>
+                    </div>
+                    <div class="top-header__btn-col">
+                        <a class="top-header__btn border-btn link-modal-js" href="#modal-call">Отправить заявку</a>
+                    </div>
+                </div>   
+            </div>
+         
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="container">
+                <div class="bottom-header__content">
+                    <button class="bottom-header__menu-mobile d-xl-none" type="button">
+                        <span></span>
+                    </button>
+                    <nav class="bottom-header__nav">                        
+                        <ul class="bottom-header__list">
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/stroitelstvo/">Строительство</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/karkasnye-doma/">Каркасные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/brusovye-doma/">Брусовые дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/gazobetonnye-doma/">Дома из газобетона</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/derevjannye-doma/">Деревянные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/dachnye-doma/">Дачные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/premium/">Премиум дома <img src="img/icons/icon__star.png" alt="Премиум"></a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/bani/">Бани</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/stroitelstvo/dom-30-days/">Дом за 30 дней</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/postroennye/">Построенные дома</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/ceny/kalkulyator-stroitelstva.php">Калькулятор</a></li>
+                            <li class="bottom-header__item bottom-header__item--akcii"><a class="bottom-header__link" href="/akcii.php">Акции</a></li>
+                            <li class="bottom-header__item">
+                                <span class="bottom-header__link">Клиентам</span>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/">Цены</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/kredit-ipoteka.php">Кредит</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/materinskij-kapital.php">Мат. капитал</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/garantii.php">Гарантия</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/voprosy-otvety.php/">Вопросы-ответы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/oplata.php">Оплата</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/dostavka.php/">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/about.php">О компании</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">                        
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/uslugi.php">Услуги</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/otzyvy/">Отзывы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/history.php">История</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stati/">Статьи</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/partnery.php">Партнеры</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/vakansii.php">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/contacts.php">Контакты</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--compare" href="/stroitelstvo/compares/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                </svg>
+                                <span>4</span></a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--favorite" href="/stroitelstvo/favorite/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                </svg>
+                                <span>0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="page product-page house-30-days">
+                <!-- Breadcrumbs -->
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Строительство</a>
+                            </li>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Проекты</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Дом 6х9 с террасой</span>
+                            </li>                                    
+                        </ol>         
+                    </nav>
+                </div>
+                <!-- //Breadcrumbs -->
+                
+                <!-- house-30-days Top -->                
+                <div class="container">
+                    <div class="page__title">
+                        <h1>Дом 6х9 с террасой</h1>
+                    </div>
+                    <div class="product-page__top">
+                        <form class="product-card" action="">
+                            <div class="row g-2 g-lg-4">
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="product-card__slider product-slider">
+                                        <div class="prod-item__add-to"> 
+                                            <a class="msfavorites prod-item__add-to-btn add-to-favorite load" data-click="" data-data-list="default" data-data-type="resource" data-data-id="" data-data-key="">
+                                                <span class="msfavorites-noneactive" title="Добавить в избранное">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span>
+                                                <!-- <span class="msfavorites-active" title="Удалить из избранного">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                                    </svg>
+                                                </span> -->
+                                            </a>
+                                            <div class="comparison comparison-default" data-id="" data-list="default">
+                                                <a class="prod-item__add-to-btn add-to-compare comparison-add" title="Добавить в сравнение" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a class="prod-item__add-to-btn add-to-compare active comparison-remove" title="Удалить из сравнения" data-text="Обновляю список...">
+                                                    <svg class="icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__swiper swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-1.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-1.jpg" alt="">
+                                                    </a>                                       
+                                                </div>
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-2.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-2.jpg" alt="">
+                                                    </a>                                       
+                                                </div>
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-3.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-3.jpg" alt="">
+                                                    </a>                                       
+                                                </div>
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-4.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-4.jpg" alt="">
+                                                    </a>                                       
+                                                </div>                                          
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-5.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-5.jpg" alt="">
+                                                    </a>                                       
+                                                </div>                                          
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-6.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-6.jpg" alt="">
+                                                    </a>                                       
+                                                </div>                                          
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-7.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-7.jpg" alt="">
+                                                    </a>                                       
+                                                </div>                                          
+                                                <div class="product-slider__slide swiper-slide">
+                                                    <a class="product-slider__img-wrap" href="img/house-30-days/product-30-8.jpg" data-fancybox="product-card">
+                                                        <img class="product-slider__img" src="img/house-30-days/product-30-8.jpg" alt="">
+                                                    </a>                                       
+                                                </div>                                          
+                                            </div> 
+                                            <div class="product-slider__btn-prev swiper-button-prev"></div>
+                                            <div class="product-slider__btn-next swiper-button-next"></div>
+                                        </div>
+                                        <div class="product-slider__thumbs product-thumbs">
+                                            <div class="product-thumbs__swiper swiper" >
+                                                <div class="swiper-wrapper">
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-1.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-2.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-3.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-4.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-5.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-6.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-7.jpg" alt="">
+                                                    </div>  
+                                                    <div class="product-thumbs__slide swiper-slide">
+                                                        <img class="product-thumbs__img" src="img/house-30-days/product-30-8.jpg" alt="">
+                                                    </div>                                                      
+                                                </div>
+                                            </div>                                        
+                                            <div class="product-thumbs__btn-prev swiper-button-prev"></div>
+                                            <div class="product-thumbs__btn-next swiper-button-next"></div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="product-card__info">
+                                        <div class="house-30-days__price">
+                                            1 385 500 руб.
+                                        </div>
+                                        <ul class="product-card__feature-list">
+                                            <li class="product-card__feature-item">
+                                                <div class="product-card__feature-val">Размер дома</div>
+                                                <div class="product-card__feature-key">6 м х 9 м</div>
+                                            </li>
+                                            <li class="product-card__feature-item">
+                                                <div class="product-card__feature-val">Общая площадь</div>
+                                                <div class="product-card__feature-key">54 м<sup>2</sup></div>
+                                            </li>
+                                            <li class="product-card__feature-item">
+                                                <div class="product-card__feature-icon-col">
+                                                    <div class="product-card__feature-icon-val">Комнат</div>
+                                                    <div class="product-card__feature-icon-key">2
+                                                        <svg class="product-card__feature-icon icon-svg">
+                                                            <use xlink:href="img/icons/sprite-icons.svg#bed"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__feature-icon-col">
+                                                    <div class="product-card__feature-icon-val">Сан узлов</div>
+                                                    <div class="product-card__feature-icon-key">1
+                                                        <svg class="product-card__feature-icon icon-svg">
+                                                            <use xlink:href="img/icons/sprite-icons.svg#toilet"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>                                                
+                                            </li>
+                                        </ul>
+                                        <div class="house-30-days__term">Срок строительства 30 дней</div>
+                                        <div class="house-30-days__buttons">
+                                            <a class="house-30-days__btn main-btn link-modal-js" href="#modal-call">Хочу такой дом</a>
+                                            <a class="house-30-days__link-more smooth-scroll-js" href="#house-30-days-more">Подробнее</a>
+                                            
+                                        </div>
+                                        <div class="house-30-days__subtitle">Варианты оплаты</div>
+                                        <a class="house-30-days__link" href="/ceny/materinskij-kapital.php">Материнский Капитал</a>
+                                        <a class="house-30-days__link" href="/ceny/">Кредит</a>
+                                        <div class="house-30-days__subtitle">Выбрать</div>
+                                        <a class="house-30-days__link smooth-scroll-js" href="#house-30-days-extra">Фундамент</a>
+                                        <a class="house-30-days__link smooth-scroll-js" href="#house-30-days-extra">Сантехника</a>
+                                        <a class="house-30-days__link smooth-scroll-js" href="#house-30-days-extra">Электрика</a>
+                                        <ul class="check-list house-30-days__check-list">
+                                            <li>Каркасная технология строителсьтва</li>
+                                            <li>Теплый семейный дом!</li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>                    
+                </div>
+                <!-- //house-30-days Top -->
+
+                <!-- house-30-days Description --> 
+                <div class="container">
+                    <section class="house-30-days__description">                        
+                        <h2>Описание</h2>  
+                        Стильный дачный дом для небольшой семьи. Проект разработан для людей, которые любят отдых на&nbsp;природе, но&nbsp;привыкли к&nbsp;городскому комфорту. Здесь совмещена благоустроенная территория на&nbsp;открытом воздухе и&nbsp;удобная планировка внутреннего пространства. Большие окна не&nbsp;только обеспечивают максимум инсоляции, но&nbsp;и&nbsp;служат архитектурным украшением здания. В&nbsp;левой части дома располагается кухня-гостиная, в&nbsp;правой&nbsp;&mdash; две комнаты под спальни. Между ними бытовая зона, состоящая из&nbsp;холла, санузла и&nbsp;небольшой прихожей.                    
+                    </section>      
+                </div>           
+                <!-- //house-30-days Description -->  
+
+                <!-- house-30-days tabs block -->
+                <div class="container">
+                    <div class="house-30-days__tabs tabs" id="house-30-days-more">
+                        <div class="house-30-days__tabs-caption tabs__caption">
+                            <button class="house-30-days__tabs-btn tabs__btn active" type="button">Планировка</button>
+                            <button class="house-30-days__tabs-btn tabs__btn" type="button">Фасады</button>
+                        </div>
+                        <div class="house-30-days__tabs-wrap tabs__wrap">
+                            <div class="tabs__content active">
+                                <div class="row gy-3 gy-md-0">
+                                    <div class="col-md-7">
+                                        <div class="house-30-days__plan-img">
+                                            <a href="img/house-30-days/product-30-4.jpg" title="План дома" data-fancybox="plan">
+                                                <img src="img/house-30-days/product-30-4.jpg" alt="План дома">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="house-30-days__consult consult-30-days">
+                                            <div class="consult-30-days__title">Хотите получить консультацию или изменить планировку?</div>
+                                            <div class="consult-30-days__text">Позвоните нашему менеджеру и он ответит на все воросы</div>
+                                            <div class="consult-30-days__avatar">
+                                                <img src="img/our_meneger.jpg" alt="Менеджер">
+                                            </div>
+                                            <a class="consult-30-days__btn main-btn link-modal-js" href="#modal-call">Получить консультацию</a>                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="house-30-days__facades facades-list">
+                                    <div class="facades-list__item">
+                                        <a href="img/house-30-days/product-30-5.jpg" title="Дом по проекту 6х9" data-fancybox="facade">
+                                            <img src="img/house-30-days/product-30-5.jpg" alt="Дом с терассой">
+                                        </a>
+                                    </div>
+                                    <div class="facades-list__item">
+                                        <a href="img/house-30-days/product-30-6.jpg" title="Дом по проекту 6х9" data-fancybox="facade">
+                                            <img src="img/house-30-days/product-30-6.jpg" alt="Фасад дома с терассой">
+                                        </a>
+                                    </div>
+                                    <div class="facades-list__item">
+                                        <a href="img/house-30-days/product-30-7.jpg" title="Дом по проекту 6х9" data-fancybox="facade">
+                                            <img src="img/house-30-days/product-30-7.jpg" alt="Дом 6х9">
+                                        </a>
+                                    </div>
+                                    <div class="facades-list__item">
+                                        <a href="img/house-30-days/product-30-8.jpg" title="Дом по проекту 6х9" data-fancybox="facade">
+                                            <img src="img/house-30-days/product-30-8.jpg" alt="6х9 с терассой">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //house-30-days tabs block -->
+                
+                <!-- house-30-days payment -->
+                <div class="container">
+                    <div class="house-30-days__payment-block payment-block">
+                        <div class="payment-block__item">
+                            <img class="payment-block__img" src="img/house-30-days/sber_logo.jpg" alt="Сбер">
+                            <div class="payment-block__content">
+                                <div class="payment-block__title">Кредит СберБанк</div>
+                                <div class="payment-block__prcent">10,5%</div>
+                                <div class="payment-block__term">3-10 лет</div>
+                            </div>
+                        </div>
+                        <div class="payment-block__item">
+                            <img class="payment-block__img" src="img/house-30-days/lokobank_logo.jpg" alt="Локо">
+                            <div class="payment-block__content">
+                                <div class="payment-block__title">Кредит ЛокоБанк</div>
+                                <div class="payment-block__prcent">11,5%</div>
+                                <div class="payment-block__term">3-10 лет</div>
+                            </div>
+                        </div>
+                        <div class="payment-block__item payment-block__item--var">
+                            <img class="payment-block__img" src="img/house-30-days/maternity_capital.jpg" alt="Локо">
+                            <div class="payment-block__content">
+                                <div class="payment-block__title">Принимаем материнский капитал</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //house-30-days payment -->
+               
+                <!-- house-30-days equipment -->
+                <div class="container">
+                    <div class="equipment-30">
+                        <div class="equipment-30__title">
+                            Базовая комплектация 6х9 м с террасой
+                        </div>                                       
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js active">Силовой каркас</div>
+                            <div class="equipment-30__content">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Обвязка</div>
+                                    <div class="equipment-30__key">Нижний ряд брус 150х150, верхняя пакет досок 50х150 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Лаги пола</div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Черновой пол</div>
+                                    <div class="equipment-30__key">Обрезная доска 25х100 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Стены силового каркаса</div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Оконные проемы</div>
+                                    <div class="equipment-30__key">С общим распределительным ригелем по всей стене.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Силовые элементы</div>
+                                    <div class="equipment-30__key">Ригели, укосины, бриджинги из обрезной доски 25х100 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Потолочные балки </div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Стропила</div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Перегородки </div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Материал Каркаса</div>
+                                    <div class="equipment-30__key">Обрезная доска 50х150 мм с шагом 580 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Антисептирование</div>
+                                    <div class="equipment-30__key">Обвязка, лаги пола, черновой пол Неомид 430 eco.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Крепеж </div>
+                                    <div class="equipment-30__key">Оцинкованные гвозди, саморезы, пластины, усиленные  уголки.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Крыша</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Ветрозащита</div>
+                                    <div class="equipment-30__key">Изоспан АМ</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Вентилируемый зазор</div>
+                                    <div class="equipment-30__key">Брусок 40х20 мм сухой строганный, бьётся по стропилам.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Обрешетка кровли</div>
+                                    <div class="equipment-30__key">Доска 20х100 мм сухая строганная с шагом 300 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Кровельный материал</div>
+                                    <div class="equipment-30__key">Металлочерепица «Ламонтерра Х» 0,45 мм (цвет на выбор).</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Карнизные свесы</div>
+                                    <div class="equipment-30__key">Свесы 500 мм подшиваются имитацией бруса камерной сушки.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Наружная отделка</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Ветрозащита</div>
+                                    <div class="equipment-30__key">Панели «Белтермо» 20 мм шип-паз</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Вентилируемый зазор</div>
+                                    <div class="equipment-30__key">Брусок 20х40 мм сухой строганный, бьётся по стойкам.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Чистовая отделка</div>
+                                    <div class="equipment-30__key">Имитация бруса 140х18 мм камерной сушки.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Наличник</div>
+                                    <div class="equipment-30__key">Наличник клееный 80 мм.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Двери</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Дверь входная</div>
+                                    <div class="equipment-30__key">Металлическая 960х2050 мм «Гарда» с терморазрывом.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Межкомнатные двери</div>
+                                    <div class="equipment-30__key">Филенчатые 800х2000 мм с коробкой наличником и ручкой.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Окна</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">ПВХ</div>
+                                    <div class="equipment-30__key">Двухкамерные стеклопакеты, профиль VEKA EuroLine Pro Устанавливаются с отливами 100 мм, подоконниками ПВХ 200 мм, откосами 150 мм</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Утепление</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Пол 1-го этажа</div>
+                                    <div class="equipment-30__key">ТеплоKnauf 150 мм (не содержит фенол-формальдегидных смол).</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Перекрытие</div>
+                                    <div class="equipment-30__key">ТеплоKnauf 150 мм (не содержит фенол-формальдегидных смол).</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Внешние стены </div>
+                                    <div class="equipment-30__key">ТеплоKnauf 150 мм (не содержит фенол-формальдегидных смол).</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Перегородки</div>
+                                    <div class="equipment-30__key">ТеплоKnauf 150 мм (не содержит фенол-формальдегидных смол).</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="equipment-30__item">
+                            <div class="equipment-30__heading accordion-head--js">Внутренняя отделка</div>
+                            <div class="equipment-30__content" style="display: none;">
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Пароизоляция</div>
+                                    <div class="equipment-30__key">Изоспан В</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Вентилируемый зазор</div>
+                                    <div class="equipment-30__key">Брусок 40х20 мм сухой строганный.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Стены</div>
+                                    <div class="equipment-30__key">Вагонка (Штиль) камерной сушки.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Потолок</div>
+                                    <div class="equipment-30__key">Вагонка (Штиль) камерной сушки.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Напольное покрытие</div>
+                                    <div class="equipment-30__key">Шпунтовая доска 28 мм камерной сушки.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Плинтус</div>
+                                    <div class="equipment-30__key">Плинтус фигурный 45 мм.</div>
+                                </div>
+                                <div class="equipment-30__row">
+                                    <div class="equipment-30__val">Наличник</div>
+                                    <div class="equipment-30__key">Наличник клееный 80 мм.</div>
+                                </div>
+                                <div class="custom-option cost_config_block df ai-c">
+                                    <div class="cost_config ttu">Стоимость стандартной комплектации: <span>1 385 500 руб.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- //house-30-days equipment -->
+
+                <!-- house-30-days Extra -->
+                <div class="container">
+                    <div class="extra">
+                        <h2>Дополнительно</h2>
+                        <div class="extra__block" id="house-30-days-extra">
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/roof.jpg" alt="Крыша">
+                                    </div>
+                                    <div class="extra__title">Крыша</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">                                        
+                                            <span class="extra__input-name">Гибкая черепица</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="95000">85 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Фальцевая кровля</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="71000">65 000 руб.</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/exterior.jpg" alt="Наружная отделка">
+                                    </div>
+                                    <div class="extra__title">Наружная отделка</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Имитация бруса 196х20 мм камерной сушки</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="50000">47 500 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Скандинавская доска 200х23 мм.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="55000">55 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Виниловый сайдинг «Docke»</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="95000">90 000 руб.</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/decoration.jpg" alt="Внутренняя отделка">
+                                    </div>
+                                    <div class="extra__title">Внутренняя отделка</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Потолок: вагонка (штиль) Стены: Имитация бруса 140х18 мм.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="65000">55 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Потолок: вагонка (штиль) Стены: Плита ГСП 10 мм, влагостойкая.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="10000">10 000 руб.</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/flooring.jpg" alt="Настил пола">
+                                    </div>
+                                    <div class="extra__title">Настил пола</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Шпунтовая доска 36 мм камерной сушки.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="28000">31 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Фанера 21 мм либо ЦСП 10 мм в два слоя</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="30000">28 000 руб.</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/plumbing.jpg" alt="Сантехника">
+                                    </div>
+                                    <div class="extra__title">Сантехника</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Пакет сантехники</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="30000">от 30 000 руб.</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/eclecticism.jpg" alt="Электрика">
+                                    </div>
+                                    <div class="extra__title">Электрика</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Пакет электрики №1</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="30000">от 30 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Пакет электрики №2</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="0">По запросу</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__item">
+                                <div class="extra__top">
+                                    <div class="extra__img">
+                                        <img src="img/house-30-days/foundation.jpg" alt="Фундамент">
+                                    </div>
+                                    <div class="extra__title">Фундамент</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Винтовые сваи Д-108 мм 27 шт.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="110000">110 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Буронабивные сваи Д-160 мм 27 шт.</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="122000">122 000 руб.</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Ленточный фундамент</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="0">Расчет после выезда</div>
+                                </div>
+                                <div class="extra__row">
+                                    <div class="extra__val">
+                                        <label>
+                                            <input class="extra__input" type="checkbox">
+                                            <span class="extra__input-name">Монолитная плита</span>
+                                        </label>
+                                    </div>
+                                    <div class="extra__price" data-price="0">Расчет после выезда</div>
+                                </div>
+                                <div class="extra__selected">
+                                    <span class="extra__selected-text">Выбрано</span>
+                                    <div class="extra__selected-price"><span>0</span> руб.</div>
+                                </div>
+                            </div>
+        
+                            <div class="extra__total-block">
+                                <div class="extra__total-content">
+                                    <div class="extra__total-title">Выбрано доп. опций на сумму</div>
+                                    <div class="extra__total"><span>0</span> ₽</div>
+                                    <a class="extra__whatsapp"  href="https://wa.me/send?text=Выбрано доп. опций на сумму 0 руб.&phone=78123098141" target="_blank">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                        </svg>
+                                        Получить смету в Whatsap</a>
+                                    <form class="extra__form form-extra" action="">
+                                        <input class="form-extra__input custom-input" name="order[phone]" type="tel" placeholder="+7 (___) ___-__-__" required>
+                                        <textarea class="form-extra__order-text" name="order[text]" placeholder="Текст сообщения" hidden=""></textarea>
+                                        <button class="form-extra__btn main-btn" type="submit">Отправить</button>        
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- //house-30-days Extra -->                
+
+
+            </main>
+            <div class="button-up"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__logo-col">
+                <a class="footer__logo" href="/">
+                    <img src="img/logo.png" alt="Логотип Дом навек футер">
+                </a>
+            </div>
+            <div class="footer__info-col">
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="/contacts.php">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Санкт-Петербург, пр. Обуховской Обороны, д. 271. Лит. А, оф. 607</a>
+                </div>
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="mailto:info@dom-navek.com">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#at"></use>
+                        </svg>
+                        info@dom-navek.com</a>
+                      
+                </div>                
+            </div>
+            <div class="footer__phone-col">                
+                <a class="footer__phone" href="tel:+78123098141">
+                    <svg class="footer__phone-icon icon-svg">
+                        <use xlink:href="img/icons/sprite-icons.svg#phone-2"></use>
+                    </svg>
+                + 7 (812) 309-81-41</a>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="https://www.youtube.com/channel/UClaZ7FTvgJJGbYnFrbqWzUA" target="_blank"><img src="img/icons/youtube.png" alt="youtube"></a>
+                    <a class="footer__social-link" href="https://m.vk.com/domnavek" target="_blank"><img src="img/icons/vk.png" alt="vk"></a>
+                    <!--<a class="footer__social-link" href="https://www.instagram.com/domanavek/" target="_blank"><img src="img/icons/instagram.png" alt="instagram"></a>-->
+                </div>
+            </div>
+            <div class="footer__links-col">                
+                <p class="footer__gtext"><a href="/politika.php">Политика конфиденциальности</a></p>
+                <p class="footer__gtext"><a href="/sitemap/">Карта сайта</a> </p>
+                <p class="footer__gtext">Сделано в <a href="https://newclients1.ru/" target="_blank">Новые клиенты</a></p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals-->
+<div class="modal" id="modal-call" style="display: none">
+	<div class="modal__title">
+		Отправить заявку на расчет
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <input class="form-call__file" id="UserFile1" name="user_file1" placeholder="Файл" type="file">
+        <input class="form-call__file" id="UserFile2" name="user_file2" placeholder="Файл" type="file">
+        <input class="form-call__file" id="UserFile3" name="user_file3" placeholder="Файл" type="file">
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<div class="modal" id="modal-order" style="display: none">
+	<div class="modal__title">
+		Отправить заявку
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<div class="modal" id="modal-warranty" style="display: none">
+	<div class="modal__title">
+		Сообщить о гарантийном случае
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<!-- //Modals-->
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/yastatic-share.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AJ7r-1sBAAAAlF0OZwIALWFHKSYSQmTbJCEsjBy7-O-OhzUAAAAAAAAAAACE3KdPiBtUmWSECH3uliTBrzjwiA=="></script>
+<script src="js/main.js"></script> 
+<script src="js/page.js"></script> 
+        </div>  
+    </body>
+</html>
