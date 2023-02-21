@@ -153,24 +153,6 @@
   padding: 20px;
 }
 
-.square-list li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-.square-list li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  background-color: #97B42E;
-}
-
 .completed-block__item {
   background-color: #fff;
   border-radius: 5px;
@@ -653,6 +635,24 @@
   width: 12px;
   height: 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' x='0' y='0' viewBox='0 0 417.813 417'%3E%3Cg%3E%3Cpath d='M159.988 318.582c-3.988 4.012-9.43 6.25-15.082 6.25s-11.094-2.238-15.082-6.25L9.375 198.113c-12.5-12.5-12.5-32.77 0-45.246l15.082-15.086c12.504-12.5 32.75-12.5 45.25 0l75.2 75.203L348.104 9.781c12.504-12.5 32.77-12.5 45.25 0l15.082 15.086c12.5 12.5 12.5 32.766 0 45.246zm0 0' fill='%23b61f11'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.square-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.square-list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #97B42E;
 }
 
 .trapeze-btn {
