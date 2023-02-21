@@ -7,7 +7,8 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -25,11 +26,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-@media (max-width: 575px) {
-  body {
-    font-size: 14px;
-  }
-}
 
 input,
 button,
@@ -46,12 +42,16 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
   transition: color 0.15s ease-in;
 }
 
 a:not([class]) {
   text-decoration: underline;
   color: var(--accent-color);
+  -webkit-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
   transition: color 0.15s ease-in;
 }
 
@@ -67,4 +67,10 @@ ul li {
 img {
   vertical-align: top;
   max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
 }
