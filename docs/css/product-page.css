@@ -686,12 +686,6 @@
   background-position: center;
 }
 
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 .table-bordered {
   width: 100%;
   border-collapse: collapse;

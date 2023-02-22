@@ -720,6 +720,12 @@
   border-left-color: var(--accent-color-hover);
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 @media (min-width: 767px) {
   .construct-block__btn:not(:last-child)::after {
     content: "";

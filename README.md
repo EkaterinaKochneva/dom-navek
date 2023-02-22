@@ -12,3 +12,5 @@
 12. Сравнение
 13. Избранное
 14. https://ekaterinakochneva.github.io/dom-navek/house-30-days.html
+
+15. https://ekaterinakochneva.github.io/dom-navek/ceny.html
