@@ -730,6 +730,14 @@
   text-align: center;
 }
 
+.text-grey {
+  color: var(--grey-color-font);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
 .built-projects__item {
   position: relative;
   border-radius: 5px;
