@@ -563,27 +563,27 @@
   line-height: 1.7;
 }
 
-.simpl-table {
+.simple-table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.simpl-table th {
+.simple-table th {
   padding: 8px;
   border-bottom: 1px solid var(--light-grey);
   background-color: var(--light-grey-2);
 }
 
-.simpl-table tr:nth-child(2n) {
+.simple-table tr:nth-child(2n) {
   background-color: var(--white);
 }
 
-.simpl-table tr:nth-child(2n+1) {
+.simple-table tr:nth-child(2n+1) {
   background-color: var(--bg-color);
 }
 
-.simpl-table td {
+.simple-table td {
   padding: 5px 20px;
 }
 
@@ -663,6 +663,73 @@
   text-decoration: underline;
   font-weight: 600;
   margin: 10px 0 20px;
+}
+
+.banks-block {
+  margin: 30px 0;
+}
+
+.banks-block__item {
+  background-color: var(--white);
+  -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.bank-item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid var(--light-grey);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-item__logo {
+  width: 80px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 5px;
+  border-right: 1px solid var(--light-grey);
+}
+
+.bank-item__logo img {
+  width: 100%;
+}
+
+.bank-item__info {
+  padding: 5px;
+}
+
+.bank-item__title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bank-item__year {
+  font-size: 12px;
+}
+
+.bank-item__bottom {
+  padding: 10px;
+}
+
+.bank-item__list {
+  font-size: 13px;
+}
+
+.bank-item__list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.bank-item__list svg {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: var(--grey);
 }
 
 @media (max-width: 1199px) {
