@@ -766,11 +766,6 @@
   margin: 30px 0;
 }
 
-.payment-block__title {
-  font-weight: 900;
-  font-size: 16px;
-}
-
 .payment-block__item {
   background-color: var(--bg-color);
   text-align: center;
@@ -836,6 +831,26 @@
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   grid-area: 2/5/3/6;
+}
+
+.map-delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.map-delivery__left {
+  width: 70%;
+}
+
+.map-delivery__right {
+  width: 30%;
+  background-color: var(--light-grey-2);
+  padding: 30px;
+  padding-left: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -974,6 +989,14 @@
     -ms-grid-column: 4;
     -ms-grid-column-span: 3;
     grid-area: 4/4/5/7;
+  }
+
+  .map-delivery__left {
+    width: 100%;
+  }
+
+  .map-delivery__right {
+    width: 100%;
   }
 }
 

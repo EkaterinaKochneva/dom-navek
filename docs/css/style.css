@@ -1343,6 +1343,14 @@ main p:not([class]) {
   margin: 25px 0;
 }
 
+main p:not([class]):first-child {
+  margin-top: 0;
+}
+
+main p:not([class]):last-child {
+  margin-bottom: 0;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }

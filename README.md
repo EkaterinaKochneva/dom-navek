@@ -18,3 +18,5 @@
 17. https://ekaterinakochneva.github.io/dom-navek/materinskij-kapital.html
 18. https://ekaterinakochneva.github.io/dom-navek/voprosy-otvety.html
 19. https://ekaterinakochneva.github.io/dom-navek/oplata.html
+20. https://ekaterinakochneva.github.io/dom-navek/dostavka.html
+21. https://ekaterinakochneva.github.io/dom-navek/uslugi.html

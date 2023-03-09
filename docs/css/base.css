@@ -726,10 +726,6 @@
   overflow-y: hidden;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .text-grey {
   color: var(--grey-color-font);
 }
@@ -813,6 +809,29 @@
   font-weight: 500;
   color: var(--grey);
   text-decoration: underline;
+}
+
+.border-block {
+  border: 3px solid var(--accent-color);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.small-title {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.not-style-list {
+  margin: 20px 0;
+}
+
+.not-style-list li {
+  margin-bottom: 5px;
 }
 
 @media (min-width: 767px) {
