@@ -48,6 +48,41 @@ $(document).ready(function(){
         },
 	});
 
+	const swiperReview = new Swiper('.product-slider__swiper', {
+
+		slidesPerView: 1,
+		draggable: true,
+
+		thumbs: {
+			swiper: swiperProductThumbs,
+		  },
+        navigation: {			
+        prevEl: '.product-slider__btn-prev',
+        nextEl: '.product-slider__btn-next'
+        },
+	});
+
+    document.querySelectorAll('.review-item__slider').forEach(n => {
+        const swiperReviewThumbs = new Swiper(n.querySelector('.review-thumbs__swiper'), {     
+            
+            slidesPerView: 4,
+            spaceBetween: 5,
+            grid: {
+                fill: 'row',
+                rows: 2,
+              },
+		});
+
+		const swiperReview = new Swiper(n.querySelector('.review-item__swiper'), {
+			slidesPerView: 1,		
+			
+			thumbs: {
+                swiper: swiperReviewThumbs,
+              },
+	
+		  });
+	});
+
     //Плавный скролл
 	$(".smooth-scroll-js").on("click", function (e) {
 		e.preventDefault();
