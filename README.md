@@ -20,3 +20,7 @@
 19. https://ekaterinakochneva.github.io/dom-navek/oplata.html
 20. https://ekaterinakochneva.github.io/dom-navek/dostavka.html
 21. https://ekaterinakochneva.github.io/dom-navek/uslugi.html
+22. https://ekaterinakochneva.github.io/dom-navek/otzyvy.html
+23. https://ekaterinakochneva.github.io/dom-navek/history.html
+24. https://ekaterinakochneva.github.io/dom-navek/stati.html
+25. https://ekaterinakochneva.github.io/dom-navek/partnery.html
