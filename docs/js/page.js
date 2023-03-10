@@ -78,8 +78,7 @@ $(document).ready(function(){
 			
 			thumbs: {
                 swiper: swiperReviewThumbs,
-              },
-	
+              },	
 		  });
 	});
 

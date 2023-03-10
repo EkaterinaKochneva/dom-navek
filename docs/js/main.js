@@ -51,6 +51,13 @@ $(document).ready(function(){
 			.eq($(this).index()).fadeIn(50).addClass('active');
 	});
 
+        // House materials for mobile
+        $('.house-materials__info').hover(function () {	
+            let number = $(this).attr("data-number");
+            $('.house-materials__show-for-mobile .house-materials__show-'+number).toggle();
+        });
+    
+
 
 	// Map
     const map_markers = [

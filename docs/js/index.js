@@ -10,13 +10,4 @@ $(document).ready(function(){
 
 	});
 
-
-    // House materials for mobile
-    $('.house-materials__info').hover(function () {	
-        let number = $(this).attr("data-number");
-        console.log(number);
-        $('.house-materials__show-for-mobile .house-materials__show-'+number).toggle();
-	});
-
-
 })

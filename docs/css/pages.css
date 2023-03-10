@@ -1081,6 +1081,49 @@
   color: var(--grey-color-font);
 }
 
+.vacancy {
+  margin-bottom: 30px;
+}
+
+.vacancy__item {
+  -webkit-box-shadow: 0px 0 6px 0px rgba(154, 146, 146, 0.11);
+          box-shadow: 0px 0 6px 0px rgba(154, 146, 146, 0.11);
+  margin-bottom: 20px;
+}
+
+.vacancy__title {
+  padding: 15px;
+  background-color: var(--bg-color);
+}
+
+.vacancy__title span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.vacancy__body {
+  padding: 15px;
+}
+
+.vacancy__row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vacancy__key {
+  color: var(--grey-color-font);
+}
+
+.vacancy__more-link {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.vacancy__more-link:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 1199px) {
   .page__sidebar {
     display: none;

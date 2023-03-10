@@ -24,3 +24,4 @@
 23. https://ekaterinakochneva.github.io/dom-navek/history.html
 24. https://ekaterinakochneva.github.io/dom-navek/stati.html
 25. https://ekaterinakochneva.github.io/dom-navek/partnery.html
+26. https://ekaterinakochneva.github.io/dom-navek/vakansii.html
