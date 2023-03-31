@@ -25,3 +25,5 @@
 24. https://ekaterinakochneva.github.io/dom-navek/stati.html
 25. https://ekaterinakochneva.github.io/dom-navek/partnery.html
 26. https://ekaterinakochneva.github.io/dom-navek/vakansii.html
+
+27. https://ekaterinakochneva.github.io/dom-navek/rasschitat-stoimost-doma.html

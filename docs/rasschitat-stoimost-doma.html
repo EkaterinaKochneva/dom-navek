@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Рассчитать стоимость дома</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css?_v=20230331142816"/>
+	<link rel="stylesheet" href="libs/fancybox.min.css?_v=20230331142816"/>
+	
+	<link rel="stylesheet" href="css/style.css?_v=20230331142816"><!-- Стили, которые повторяются на всех страницах -->
+	<link rel="stylesheet" href="css/base.css?_v=20230331142816"><!-- Стили, которые повторяются на всех страницах КРОМЕ ГЛАВНОЙ, на главную можно не подключать-->
+	<link rel="stylesheet" href="css/pages.css?_v=20230331142816"><!-- Стили, для отдельных видов страниц-->	
+	<link rel="stylesheet" href="css/header.css?_v=20230331142816">
+	<link rel="stylesheet" href="css/footer.css?_v=20230331142816">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__fixed">
+        <div class="header__top top-header">
+            <div class="container">
+                <div class="top-header__content">
+                    <div class="top-header__logo">
+                        <a class="top-header__logo-link" href="/">
+                            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип Дом навек изображения"></picture>
+                        </a>
+                    </div>
+                    <div class="top-header__slogan-col">
+                        <div class="top-header__slogan-wrap">
+                            <p class="top-header__slogan">Мы помогаем обрести уют!</p>
+                        </div>
+                        <div class="top-header__search search">
+                            <form>
+                                <div class="search__input-wrap">
+                                    <input class="search__input" name="text" type="text" placeholder="Поиск по сайту">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-header__info">
+                        <div class="top-header__time">
+                            <p>Пн-Пт с 10:00 до 18:00</p>
+                            <p>Сб с 11:00 до 18:00</p>
+                        </div>
+                        <div class="top-header__phone">
+                            <a class="top-header__phone-link" href="tel:88123098141">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                                </svg>
+                                + 7 (812) 309-81-41</a>
+                        </div>
+                    </div>
+                    <div class="top-header__btn-col">
+                        <a class="top-header__btn border-btn link-modal-js" href="#modal-call">Отправить заявку</a>
+                    </div>
+                </div>   
+            </div>
+         
+        </div>
+        <div class="header__bottom bottom-header">
+            <div class="container">
+                <div class="bottom-header__content">
+                    <button class="bottom-header__menu-mobile d-xl-none" type="button">
+                        <span></span>
+                    </button>
+                    <nav class="bottom-header__nav">                        
+                        <ul class="bottom-header__list">
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/stroitelstvo/">Строительство</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/karkasnye-doma/">Каркасные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/brusovye-doma/">Брусовые дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/gazobetonnye-doma/">Дома из газобетона</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/derevjannye-doma/">Деревянные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/dachnye-doma/">Дачные дома</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/premium/">Премиум дома <picture><source srcset="img/icons/icon__star.webp" type="image/webp"><img src="img/icons/icon__star.png" alt="Премиум"></picture></a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stroitelstvo/bani/">Бани</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/stroitelstvo/dom-30-days/">Дом за 30 дней</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/postroennye/">Построенные дома</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/ceny/kalkulyator-stroitelstva.php">Калькулятор</a></li>
+                            <li class="bottom-header__item bottom-header__item--akcii"><a class="bottom-header__link" href="/akcii.php">Акции</a></li>
+                            <li class="bottom-header__item">
+                                <span class="bottom-header__link">Клиентам</span>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/">Цены</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/kredit-ipoteka.php">Кредит</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/ceny/materinskij-kapital.php">Мат. капитал</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/garantii.php">Гарантия</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/voprosy-otvety.php/">Вопросы-ответы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/oplata.php">Оплата</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/dostavka.php/">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item">
+                                <a class="bottom-header__link" href="/about.php">О компании</a>
+                                <svg class="bottom-header__link-icon icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                </svg>
+                                <ul class="bottom-header__sublist">                        
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/uslugi.php">Услуги</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/otzyvy/">Отзывы</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/history.php">История</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/stati/">Статьи</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/partnery.php">Партнеры</a></li>
+                                    <li class="bottom-header__subitem"><a class="bottom-header__sublink" href="/vakansii.php">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="bottom-header__item"><a class="bottom-header__link" href="/contacts.php">Контакты</a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--compare" href="/stroitelstvo/compares/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                </svg>
+                                <span>4</span></a></li>
+                            <li class="bottom-header__item"><a class="bottom-header__link--favorite" href="/stroitelstvo/favorite/">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/icons/sprite-icons.svg#favorite"></use>
+                                </svg>
+                                <span>0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <main class="page">
+
+                <!-- Breadcrumbs -->
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="/stroitelstvo/">Строительство</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Рассчет стоимости дома</span>
+                            </li>                                    
+                        </ol>         
+                    </nav>
+                </div>
+                <!-- //Breadcrumbs -->   
+                <div class="container">
+                    <div class="section-line-title">
+                        <h1>Рассчитать стоимость дома</h1>
+                    </div>                    
+                    <!-- Content Block -->
+                    <p>На&nbsp;сайте нашей строительной компании&nbsp;Вы можете воспользоваться калькулятором и&nbsp;ознакомиться с&nbsp;ценовым диапазоном. Независимо от&nbsp;сложности архитектурного проекта мы&nbsp;предлагаем нашим клиентам доступные цены, максимально соответствующие рыночным расценкам, реальным строительным сметам. Рассчитать стоимость дома&nbsp;Вы можете выбрав в&nbsp;форме калькулятора желаемые данные:</p>
+                    <div class="row gy-4">
+                        <div class="col-lg-4 order-lg-2">
+                            <div class="white-block">
+                                <div class="title-grn"><a href="/karkasnye-doma/">Технологии</a></div>
+                                <ul class="square-list">
+                                    <li><a href="/tehnologii/dvoinoibrys.php">Двойной Брус</a></li>
+                                    <li><a href="/tehnologii/karkas.php">Каркас</a></li>
+                                    <li><a href="/tehnologii/sib.php">Дома из sip-панелей</a></li>
+                                    <li><a href="/tehnologii/brys.php">Брусовые дома</a></li>
+                                    <li><a href="/tehnologii/kriwa.php">Крыша</a></li>
+                                </ul>
+                                <div class="title-grn"><a href="/stroitelstvo-fundamenta/">Виды фундамента</a></div>
+                                <ul class="square-list">
+                                    <li><a href="/stroitelstvo-fundamenta/buronabivnoy.php">Буронабивной фундамент</a></li>
+                                    <li><a href="/stroitelstvo-fundamenta/vintovoy.php">Винтовой фундамент</a></li>
+                                    <li><a href="/stroitelstvo-fundamenta/lentocniy.php">Ленточный фундамент</a></li>
+                                    <li><a href="/stroitelstvo-fundamenta/monolitnyy.php">Монолитный фундамент</a></li>
+                                </ul>
+                                <div class="title-grn"><a href="/stroitelstvo/zabory/">Строительство заборов</a></div>
+                                <div class="title-grn"><a href="/stroitelstvo/krovlja/">Кровля</a></div>
+                                <div class="title-grn"><a href="/stroitelstvo/kommunikacii/">Коммуникации для дома</a></div>
+                                <div class="title-grn"><a href="/stroitelstvo/pechi/">Строительство печей и каминов</a></div>
+                                <div class="title-grn"><a href="/postroennye/otdelka.php">Отделка вагонкой</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="white-block">
+                                <form class="calculator-form">
+                                    <div class="calculator-form__title">Хочу дом</div>
+                                    <div class="calculator-form__icon-list row gy-3">
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--framed" type="radio" name="calc[decoration-radio]" value="Каркасный" checked>                                                 
+                                                <span>каркасный</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--lumber" type="radio" name="calc[decoration-radio]" value="брусовой"> 
+                                                <span>брусовой</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--log" type="radio" name="calc[decoration-radio]" value="из бревна"> 
+                                                <span>из бревна</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--cedar" type="radio" name="calc[decoration-radio]" value="из кедра"> 
+                                                <span>из кедра</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--aerated-concrete" type="radio" name="calc[decoration-radio]" value="газобетон"> 
+                                                <span>газобетон</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <label class="calculator-form__icon-radio">
+                                                <input class="calculator-form__icon calculator-form__icon--bath" type="radio" name="calc[decoration-radio]" value="баню"> 
+                                                <span>баню</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="col-sm-6">
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Площадь дома:                                      
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="от 30 до 80 м. кв.">от 30 до 80 м. кв.</option>
+                                                        <option value="от 80 до 120 м. кв.">от 80 до 120 м. кв.</option>
+                                                        <option value="от 120 до 180 м. кв.">от 120 до 180 м. кв.</option>
+                                                        <option value="от 180 до 240 м. кв.">от 180 до 240 м. кв.</option>
+                                                        <option value="от 240 и выше">от 240 и выше</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Фундамент:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="Свайный">Свайный</option>
+                                                        <option value="Ленточный">Ленточный</option>
+                                                        <option value="Монолитная плита">Монолитная плита</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Утепление:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="100 мм.">100 мм.</option>
+                                                        <option value="150 мм.">150 мм.</option>
+                                                        <option value="200 мм.">200 мм.</option>
+                                                        <option value="150 мм.+ISOPLAT 25 мм.">150 мм.+ISOPLAT 25 мм.</option>
+                                                        <option value="200 мм.+ISOPLAT 25 мм.">200 мм.+ISOPLAT 25 мм.</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Наружная отделка:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="Имитация бруса">Имитация бруса</option>
+                                                        <option value="Имитация бревна">Имитация бревна</option>
+                                                        <option value="Сайдинг">Сайдинг</option>
+                                                        <option value="Планкен лиственница">Планкен лиственница</option>
+                                                        <option value="Планкен композит">Планкен композит</option>
+                                                        <option value="ЦСП">ЦСП</option>
+                                                        <option value="Smart Side">Smart Side</option>
+                                                        <option value="Без отделки">Без отделки</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Внутреняя отделка:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="Вагонка">Вагонка</option>
+                                                        <option value="Имитация бруса">Имитация бруса</option>
+                                                        <option value="Имитация бревна">Имитация бревна</option>
+                                                        <option value="Стеновой Шпунт">Стеновой Шпунт</option>
+                                                        <option value="Термодоска">Термодоска</option>
+                                                        <option value="Гипсокартон">Гипсокартон</option>
+                                                        <option value="Без отделки">Без отделки</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Тип кровли:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <select class="calculator-form__select" name="calc[square]">
+                                                        <option selected="" value="Металлочерепица">Металлочерепица</option>
+                                                        <option value="Фальцевая кровля">Фальцевая кровля</option>
+                                                        <option value="Мягкая кровля">Мягкая кровля</option>
+                                                    </select>                                                    
+                                                </div>    
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5">
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Дополнительно:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <label class="calculator-form__checkbox">
+                                                        <input value="Система отопления" name="calc[otoplenie]" type="checkbox">
+                                                        <span>Система отопления</span>
+                                                    </label>                                           
+                                                    <label class="calculator-form__checkbox">
+                                                        <input value="Электроснабжение" name="calc[jelektrosnabzhenie]" type="checkbox">
+                                                        <span>Электроснабжение</span>
+                                                    </label>                                           
+                                                    <label class="calculator-form__checkbox">
+                                                        <input value="Канализация" name="calc[kanalizatciia]" type="checkbox">
+                                                        <span>Канализация</span>
+                                                    </label>                                           
+                                                    <label class="calculator-form__checkbox">
+                                                        <input value="Печь и камин" name="calc[pech]" type="checkbox">
+                                                        <span>Печь и камин</span>
+                                                    </label>                                           
+                                                </div>    
+                                            </fieldset>
+                                            <fieldset class="calculator-form__item">
+                                                <legend>  
+                                                    Количество этажей:                                     
+                                                </legend>
+                                                <div class="calculator-form__body">
+                                                    <label class="calculator-form__radio">
+                                                        <input value="1" name="calc[floor]" type="radio">
+                                                        <span>1</span>
+                                                    </label>                                           
+                                                    <label class="calculator-form__radio">
+                                                        <input value="2" name="calc[floor]" type="radio">
+                                                        <span>2</span>
+                                                    </label>                                           
+                                                    <label class="calculator-form__radio">
+                                                        <input value="3" name="calc[floor]" type="radio">
+                                                        <span>3</span>
+                                                    </label>                                            
+                                                </div>  
+                                            </fieldset>
+                                            <div class="calculator-form__inputs">
+                                                <input class="custom-input" type="text" placeholder="Ваше имя" name="order[name]">
+                                                <input class="custom-input" type="tel" placeholder="Ваш телефон" name="order[email2]">
+                                                <textarea class="custom-textarea" placeholder="Комментарий" name="order[text]"></textarea>
+                                                <button class="calculator-form__btn trapeze-btn" type="submit">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>                                
+                                <div class="calculator-form__info">
+                                    Получить точную стоимость строительства дома можно после утверждения проекта. Нашим клиентам доступна система скидок. Получить актуальную информацию об акциях можно по телефону.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Преимущества использования калькулятора</h2>
+                    <div class="hr"></div>
+                    <ul class="square-list">
+                        <li>Воспользовавшись программой расчета, Вы можете планировать бюджет и максимально рационально распределить расходы.</li>
+                        <li>Расчет стоимости на калькуляторе довольно точный, поскольку основан на реальных ценах, представленных на строительном рынке.</li>
+                        <li>При работе с калькулятором клиент самостоятельно определяет желаемые критерии строительства &ndash; конструкцию дома, площадь, вид кровельного покрытия. От правильности заполнения формы калькулятора и детального описания проекта зависит точность расчетов.</li>
+                        <li>Предварительный расчет строительных работ позволит реально сопоставить бюджет с будущими финансовыми вложениями и подобрать оптимальный проект.</li>
+                        <li>Воспользоваться калькулятором может каждый желающий.</li>
+                        <li>С помощью калькулятора Вы можете рассчитать стоимость онлайн каркасного или <a href="/stroitelstvo/dachnye-doma/">дачного дома</a>, дома из бруса или кирпича. 
+                        Выбор технологии осуществляется с помощью соответствующих иконок.</li>
+                    </ul>
+                    <!-- Links project  -->
+                    <h2>Популярные проекты</h2>
+                    <div class="hr"></div>
+                    <div class="built-projects">
+                        <div class="row gy-4">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-dom3.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/d3-1.webp">
+                                            <img class="built-projects__img" src="img/catalog/d3-1.jpg" alt="dom3">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">Зимний каркасный дом</div>
+                                    <div class="built-projects__model">dom3</div>
+                                    <div class="built-projects__area">81.00 м<sup>2</sup></div>
+                                    <div class="built-projects__price">940 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-dom3.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-z39.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-z39-800.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-z39-800.jpg" alt="z39">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">Зимний каркасный дом</div>
+                                    <div class="built-projects__model">z39</div>
+                                    <div class="built-projects__area">84.80 м<sup>2</sup></div>
+                                    <div class="built-projects__price">969 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-z39.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-as-178.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/imatra-178-project-main.webp">
+                                            <img class="built-projects__img" src="img/catalog/imatra-178-project-main.jpg" alt="as-178">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">SIP дом</div>
+                                    <div class="built-projects__model">as-178</div>
+                                    <div class="built-projects__area">89.50 м<sup>2</sup></div>
+                                    <div class="built-projects__price">1 134 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-as-178.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-z151.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-z151.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-z151.jpg" alt="z151">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">Зимний каркасный дом</div>
+                                    <div class="built-projects__model">z151</div>
+                                    <div class="built-projects__area">103.30 м<sup>2</sup></div>
+                                    <div class="built-projects__price">2 298 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-z151.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-as-487.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-as-487.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-as-487.jpg" alt="as-487">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">Дом из клееного бруса</div>
+                                    <div class="built-projects__model">as-487</div>
+                                    <div class="built-projects__area">114.75 м<sup>2</sup></div>
+                                    <div class="built-projects__price">1 148 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-as-487.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-z30.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-z30.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-z30.jpg" alt="z30">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">Зимний каркасный дом</div>
+                                    <div class="built-projects__model">z30</div>
+                                    <div class="built-projects__area">115.00 м<sup>2</sup></div>
+                                    <div class="built-projects__price">1 471 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-z30.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    <div class="prod-item__mark prod-item__mark--hit"></div>
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-z71.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-z71.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-z71.jpg" alt="z71">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">SIP дом</div>
+                                    <div class="built-projects__model">z71</div>
+                                    <div class="built-projects__area">120.00 м<sup>2</sup></div>
+                                    <div class="built-projects__price">1 532 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-z71.php">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="built-projects__item">
+                                    
+                                    <a class="built-projects__picture" href="/stroitelstvo/proekty/model-z220.php">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/model-z220.webp">
+                                            <img class="built-projects__img" src="img/catalog/model-z220.jpg" alt="z220">
+                                        </picture>
+                                    </a>
+                                    <div class="built-projects__title">SIP дом</div>
+                                    <div class="built-projects__model">z220</div>
+                                    <div class="built-projects__area">125.60 м<sup>2</sup></div>
+                                    <div class="built-projects__price">1 794 000 ₽</div>
+                                    <a class="built-projects__link" href="/stroitelstvo/proekty/model-z220.php">подробнее</a>
+                                </div>
+                            </div>
+                        </div>                                               
+                    </div>   
+                    <div class="align-center my-4">
+                        <a class="main-btn" href="/stroitelstvo/">Посмотреть все проекты</a>
+                    </div>
+                    <!-- //Links project  -->
+                    <h3>Как избежать лишних финансовых трат</h3>
+                    <p>Основной документ, регламентирующий оплату строительных работ&nbsp;&mdash; смета. Именно смету нужно тщательно проверить и&nbsp;проанализировать основные пункты:</p>
+                    <ul class="square-list">
+                        <li>Перечень работ;</li>
+                        <li>Список материалов;</li>
+                        <li>Объемы и&nbsp;стоимость материалов.</li>
+                    </ul>
+                    <p>Обратите внимание, что некоторые строительные компании искусственно занижают сумму, указанную в&nbsp;смете. Самые распространенные уловки:</p>
+                    <ul class="square-list">
+                        <li>В&nbsp;смете расписаны только виды работ, а&nbsp;материалы клиент закупает самостоятельно;</li>
+                        <li>Указывают не&nbsp;полный перечень работ или материалов;</li>
+                        <li>В&nbsp;смете указаны самые дешевые материалы и&nbsp;простые виды работ, в&nbsp;ходе строительства, когда договор уже подписан, клиент вынужден доплачивать.</li>
+                    </ul>
+
+                    <!-- Questions form  -->
+                    <div class="container">
+                        <section class="page__questions questions-form__wrapper">                    
+                            <form class="questions-form">
+                                <div class="questions-form__title">
+                                    У вас остались вопросы?
+                                </div>
+                                <div class="questions-form__text">
+                                    Звоните по телефонам:
+                                </div>
+                                <div class="questions-form__phones">
+                                    <a class="questions-form__phone" href="tel:88123098141" >8 (812) 309 81 41</a>
+                                    <a class="questions-form__phone" href="tel:88129452538" >8 (812) 945 25 38</a>
+                                </div>
+                                <div class="questions-form__text">
+                                    Или оставьте заявку:
+                                </div>
+                                <div class="questions-form__inputs">
+                                    <input class="questions-form__input custom-input" type="text" name="order[name]" placeholder="Ваше имя:">
+                                    <input class="questions-form__input custom-input" type="tel" name="order[phone]" placeholder="Ваш телефон:">
+                                    <textarea class="questions-form__textarea custom-textarea" placeholder="Комментарий:" name="order[text]"></textarea>
+                                </div>
+                                
+                                <div class="questions-form__captcha">
+                                    <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                                </div>
+                                <button class="questions-form__btn trapeze-btn" type="submit">Отправить</button>
+                                <label class="questions-form__check custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" checked required>
+                                    <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+                                </label>
+                            </form>                  
+                        </section>
+                    </div>
+                    <!-- //Questions form  -->
+                </div>         
+            </main>
+            <div class="button-up"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__logo-col">
+                <a class="footer__logo" href="/">
+                    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип Дом навек футер"></picture>
+                </a>
+            </div>
+            <div class="footer__info-col">
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="/contacts.php">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Санкт-Петербург, пр. Обуховской Обороны, д. 271. Лит. А, оф. 607</a>
+                </div>
+                <div class="footer__info">                    
+                    <a class="footer__info-link" href="mailto:info@dom-navek.com">
+                        <svg class="footer__info-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#at"></use>
+                        </svg>
+                        info@dom-navek.com</a>
+                      
+                </div>                
+            </div>
+            <div class="footer__phone-col">                
+                <a class="footer__phone" href="tel:+78123098141">
+                    <svg class="footer__phone-icon icon-svg">
+                        <use xlink:href="img/icons/sprite-icons.svg#phone-2"></use>
+                    </svg>
+                + 7 (812) 309-81-41</a>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="https://www.youtube.com/channel/UClaZ7FTvgJJGbYnFrbqWzUA" target="_blank"><picture><source srcset="img/icons/youtube.webp" type="image/webp"><img src="img/icons/youtube.png" alt="youtube"></picture></a>
+                    <a class="footer__social-link" href="https://m.vk.com/domnavek" target="_blank"><picture><source srcset="img/icons/vk.webp" type="image/webp"><img src="img/icons/vk.png" alt="vk"></picture></a>
+                    <!--<a class="footer__social-link" href="https://www.instagram.com/domanavek/" target="_blank"><picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt="instagram"></picture></a>-->
+                </div>
+            </div>
+            <div class="footer__links-col">                
+                <p class="footer__gtext"><a href="/politika.php">Политика конфиденциальности</a></p>
+                <p class="footer__gtext"><a href="/sitemap/">Карта сайта</a> </p>
+                <p class="footer__gtext">Сделано в <a href="https://newclients1.ru/" target="_blank">Новые клиенты</a></p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals-->
+<div class="modal" id="modal-call" style="display: none">
+	<div class="modal__title">
+		Отправить заявку на расчет
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <input class="form-call__file" id="UserFile1" name="user_file1" type="file">
+        <input class="form-call__file" id="UserFile2" name="user_file2" type="file">
+        <input class="form-call__file" id="UserFile3" name="user_file3" type="file">
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<div class="modal" id="modal-order" style="display: none">
+	<div class="modal__title">
+		Отправить заявку
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<div class="modal" id="modal-warranty" style="display: none">
+	<div class="modal__title">
+		Сообщить о гарантийном случае
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="order[name]" type="text" placeholder="Ваше имя" required/>
+		<input class="form-call__input custom-input" name="order[phone]" type="tel" placeholder="Ваш телефон" required/>		
+        <textarea class="form-call__textarea custom-textarea" name="order[text]" placeholder="Текст сообщения"></textarea>
+        <div class="form-call__captcha">
+            <div class="g-recaptcha" data-sitekey="6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd"><div style="max-width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeCZ4IUAAAAALmHt37f685RGU4ODmnc8m88-lfd&amp;co=aHR0cHM6Ly94bi0tLS04c2JnZmk0YWpqZy54bi0tcDFhaTo0NDM.&amp;hl=ru&amp;v=tNAc29ZZrpcOCErva2nr4BS9&amp;size=normal&amp;cb=58dwwao6ulxw" max-width="304" height="78" role="presentation" name="a-pq4o4e8acmc7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="max-width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+        </div>
+        <button class="form-call__btn trapeze-btn" type="submit">Отправить</button>
+        <label class="form-call__check custom-checkbox">
+            <input class="custom-checkbox__input" type="checkbox" checked required>
+            <span class="custom-checkbox__text">Я согласен на обработку персональных данных</span>
+        </label>
+	</form>
+</div>
+
+<!-- //Modals-->
+
+<script src="libs/jquery.min.js?_v=20230331142816"></script>
+<script src="libs/fancybox.min.js?_v=20230331142816"></script>
+<script src="libs/swiper-bundle.min.js?_v=20230331142816"></script>
+<script src="libs/dynamic_adapt.js?_v=20230331142816"></script>
+<script src="libs/yastatic-share.js?_v=20230331142816"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AJ7r-1sBAAAAlF0OZwIALWFHKSYSQmTbJCEsjBy7-O-OhzUAAAAAAAAAAACE3KdPiBtUmWSECH3uliTBrzjwiA&_v=20230331142816"></script>
+<script src="js/main.js?_v=20230331142816"></script> 
+<script src="js/page.js?_v=20230331142816"></script> 
+        </div>  
+    </body>
+</html>
