@@ -28,3 +28,5 @@
 
 27. https://ekaterinakochneva.github.io/dom-navek/rasschitat-stoimost-doma.html
 28. https://ekaterinakochneva.github.io/dom-navek/model-barselona.html
+29. https://ekaterinakochneva.github.io/dom-navek/about-sidebar.html
+29. https://ekaterinakochneva.github.io/dom-navek/404.html

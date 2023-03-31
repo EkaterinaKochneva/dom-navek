@@ -7019,6 +7019,12 @@ a.prod-item__title:hover {
   }
 }
 
+@media (max-width: 1401px) {
+  .button-up {
+    left: calc(100% - 60px);
+  }
+}
+
 @media (max-width: 1199px) {
   .prod-item__link {
     width: 100%;
